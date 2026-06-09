@@ -57,6 +57,12 @@ TEAM_TRANSLATIONS = {
     "Argentina": "阿根廷", "Algeria": "阿尔及利亚", "Austria": "奥地利", "Jordan": "约旦",
     "Portugal": "葡萄牙", "DR Congo": "民主刚果", "Congo DR": "民主刚果", "Uzbekistan": "乌兹别克斯坦", "Colombia": "哥伦比亚",
     "England": "英格兰", "Croatia": "克罗地亚", "Ghana": "加纳", "Panama": "巴拿马"
+    "Democratic Republic of Congo": "民主刚果",
+    "Democratic Republic of the Congo": "民主刚果",
+    "Congo, Dem. Rep.": "民主刚果",
+    "Congo, DR": "民主刚果",
+    "DR Congo": "民主刚果",
+    "Congo DR": "民主刚果"
 }
 
 STAGE_TRANSLATIONS = {
