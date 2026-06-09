@@ -26,38 +26,199 @@ FALLBACK_API = "https://raw.githubusercontent.com/rezarahiminia/worldcup2026/mai
 STADIUM_API = "https://raw.githubusercontent.com/rezarahiminia/worldcup2026/main/football.stadiums.json"
 
 # 16个主办球场及本地时区映射
+# 2026世界杯 16 个官方球场与城市的精确中文译名（含世界杯官方无赞助商命名对照）
 STADIUM_INFO = {
-    "1": {"name": "阿兹特克球场 (Estadio Azteca)", "city": "墨西哥城", "tz": "America/Mexico_City"},
-    "2": {"name": "瓜达拉哈拉体育场 (Estadio Akron)", "city": "瓜达拉哈拉", "tz": "America/Mexico_City"},
-    "3": {"name": "蒙特雷体育场 (Estadio BBVA)", "city": "蒙特雷", "tz": "America/Monterrey"},
-    "4": {"name": "达拉斯体育场 (AT&T Stadium)", "city": "达拉斯 (阿灵顿)", "tz": "America/Chicago"},
-    "5": {"name": "休斯敦体育场 (NRG Stadium)", "city": "休斯敦", "tz": "America/Chicago"},
-    "6": {"name": "堪萨斯城体育场 (Arrowhead Stadium)", "city": "堪萨斯城", "tz": "America/Chicago"},
-    "7": {"name": "亚特兰大体育场 (Mercedes-Benz Stadium)", "city": "亚特兰大", "tz": "America/New_York"},
-    "8": {"name": "波士顿体育场 (Gillette Stadium)", "city": "波士顿 (福克斯堡)", "tz": "America/New_York"},
-    "9": {"name": "费城体育场 (Lincoln Financial Field)", "city": "费城", "tz": "America/New_York"},
-    "10": {"name": "迈阿密体育场 (Hard Rock Stadium)", "city": "迈阿密", "tz": "America/New_York"},
-    "11": {"name": "纽约/新泽西体育场 (MetLife Stadium)", "city": "纽约/新泽西", "tz": "America/New_York"},
-    "12": {"name": "多伦多体育场 (BMO Field)", "city": "多伦多", "tz": "America/Toronto"},
-    "13": {"name": "温哥华体育场 (BC Place)", "city": "温哥华", "tz": "America/Vancouver"},
-    "14": {"name": "洛杉矶体育场 (SoFi Stadium)", "city": "洛杉矶 (因格尔伍德)", "tz": "America/Los_Angeles"},
-    "15": {"name": "旧金山湾区体育场 (Levi's Stadium)", "city": "旧金山湾区", "tz": "America/Los_Angeles"},
-    "16": {"name": "西雅图体育场 (Lumen Field)", "city": "西雅图", "tz": "America/Los_Angeles"},
+    "1": {
+        "name": "阿兹特克球场 (Estadio Azteca)",
+        "city": "墨西哥城",
+        "country": "墨西哥",
+        "tz": "America/Mexico_City"
+    },
+    "2": {
+        "name": "瓜达拉哈拉体育场 (Estadio Akron / Estadio Guadalajara)",
+        "city": "瓜达拉哈拉",
+        "country": "墨西哥",
+        "tz": "America/Mexico_City"
+    },
+    "3": {
+        "name": "蒙特雷体育场 (Estadio BBVA / Estadio Monterrey)",
+        "city": "蒙特雷",
+        "country": "墨西哥",
+        "tz": "America/Monterrey"
+    },
+    "4": {
+        "name": "达拉斯体育场 (AT&T Stadium / Dallas Stadium)",
+        "city": "达拉斯 (阿灵顿)",
+        "country": "美国",
+        "tz": "America/Chicago"
+    },
+    "5": {
+        "name": "休斯敦体育场 (NRG Stadium / Houston Stadium)",
+        "city": "休斯敦",
+        "country": "美国",
+        "tz": "America/Chicago"
+    },
+    "6": {
+        "name": "堪萨斯城体育场 (Arrowhead Stadium / Kansas City Stadium)",
+        "city": "堪萨斯城",
+        "country": "美国",
+        "tz": "America/Chicago"
+    },
+    "7": {
+        "name": "亚特兰大体育场 (Mercedes-Benz Stadium / Atlanta Stadium)",
+        "city": "亚特兰大",
+        "country": "美国",
+        "tz": "America/New_York"
+    },
+    "8": {
+        "name": "波士顿体育场 (Gillette Stadium / Boston Stadium)",
+        "city": "波士顿 (福克斯堡)",
+        "country": "美国",
+        "tz": "America/New_York"
+    },
+    "9": {
+        "name": "费城体育场 (Lincoln Financial Field / Philadelphia Stadium)",
+        "city": "费城",
+        "country": "美国",
+        "tz": "America/New_York"
+    },
+    "10": {
+        "name": "迈阿密体育场 (Hard Rock Stadium / Miami Stadium)",
+        "city": "迈阿密",
+        "country": "美国",
+        "tz": "America/New_York"
+    },
+    "11": {
+        "name": "纽约/新泽西体育场 (MetLife Stadium / New York New Jersey Stadium)",
+        "city": "纽约/新泽西",
+        "country": "美国",
+        "tz": "America/New_York"
+    },
+    "12": {
+        "name": "多伦多体育场 (BMO Field / Toronto Stadium)",
+        "city": "多伦多",
+        "country": "加拿大",
+        "tz": "America/Toronto"
+    },
+    "13": {
+        "name": "温哥华体育场 (BC Place / Vancouver Stadium)",
+        "city": "温哥华",
+        "country": "加拿大",
+        "tz": "America/Vancouver"
+    },
+    "14": {
+        "name": "洛杉矶体育场 (SoFi Stadium / Los Angeles Stadium)",
+        "city": "洛杉矶 (因格尔伍德)",
+        "country": "美国",
+        "tz": "America/Los_Angeles"
+    },
+    "15": {
+        "name": "旧金山湾区体育场 (Levi's Stadium / San Francisco Bay Area Stadium)",
+        "city": "旧金山湾区 (圣克拉拉)",
+        "country": "美国",
+        "tz": "America/Los_Angeles"
+    },
+    "16": {
+        "name": "西雅图体育场 (Lumen Field / Seattle Stadium)",
+        "city": "西雅图",
+        "country": "美国",
+        "tz": "America/Los_Angeles"
+    }
 }
 
 # 自动翻译字典
+# 2026世界杯全部 48 支参赛球队（含常见缩写与拼写变体）中文翻译字典
 TEAM_TRANSLATIONS = {
-    "Mexico": "墨西哥", "South Africa": "南非", "Argentina": "阿根廷", "Brazil": "巴西",
-    "France": "法国", "England": "英格兰", "Germany": "德国", "Spain": "西班牙",
-    "Portugal": "葡萄牙", "Netherlands": "荷兰", "United States": "美国", "USA": "美国",
-    "Canada": "加拿大", "Uruguay": "乌拉圭", "Japan": "日本", "Korea Republic": "韩国",
-    "Saudi Arabia": "沙特", "Croatia": "克罗地亚", "Morocco": "摩洛哥", "Senegal": "塞内加尔",
-    "Belgium": "比利时", "Switzerland": "瑞士", "Denmark": "丹麦", "Tunisia": "突尼斯",
-    "Poland": "波兰", "Australia": "澳大利亚", "Ecuador": "厄瓜多尔", "Qatar": "卡塔尔",
-    "Wales": "威尔士", "Iran": "伊朗", "Costa Rica": "哥斯达黎加", "Cameroon": "喀麦隆",
-    "Serbia": "塞尔维亚", "Ghana": "加纳", "Czechia": "捷克", "Bosnia and Herzegovina": "波黑",
-    "Haiti": "海地", "Scotland": "苏格兰", "Türkiye": "土耳其", "Curaçao": "库拉索",
-    "Côte d'Ivoire": "科特迪瓦", "Sweden": "瑞典"
+    # 主办国
+    "USA": "美国",
+    "United States": "美国",
+    "United States of America": "美国",
+    "Mexico": "墨西哥",
+    "Canada": "加拿大",
+
+    # A组
+    "Korea Republic": "韩国",
+    "Republic of Korea": "韩国",
+    "South Korea": "韩国",
+    "South Africa": "南非",
+    "Czechia": "捷克",
+    "Czech Republic": "捷克",
+
+    # B组
+    "Bosnia and Herzegovina": "波黑",
+    "Bosnia & Herzegovina": "波黑",
+    "Bosnia & Herz.": "波黑",
+    "Bosnia": "波黑",
+    "Qatar": "卡塔尔",
+    "Switzerland": "瑞士",
+
+    # C组
+    "Brazil": "巴西",
+    "Morocco": "摩洛哥",
+    "Scotland": "苏格兰",
+    "Haiti": "海地",
+
+    # D组
+    "Paraguay": "巴拉圭",
+    "Australia": "澳大利亚",
+    "Turkey": "土耳其",
+    "Türkiye": "土耳其",
+
+    # E组
+    "Germany": "德国",
+    "Ecuador": "厄瓜多尔",
+    "Ivory Coast": "科特迪瓦",
+    "Côte d'Ivoire": "科特迪瓦",
+    "Curaçao": "库拉索",
+    "Curacao": "库拉索",
+
+    # F组
+    "Netherlands": "荷兰",
+    "Japan": "日本",
+    "Sweden": "瑞典",
+    "Tunisia": "突尼斯",
+
+    # G组
+    "Belgium": "比利时",
+    "Egypt": "埃及",
+    "Iran": "伊朗",
+    "IR Iran": "伊朗",
+    "Islamic Republic of Iran": "伊朗",
+    "New Zealand": "新西兰",
+
+    # H组
+    "Spain": "西班牙",
+    "Cape Verde": "佛得角",
+    "Cabo Verde": "佛得角",
+    "Saudi Arabia": "沙特阿拉伯",
+    "Saudi": "沙特",
+    "Uruguay": "乌拉圭",
+
+    # I组
+    "France": "法国",
+    "Senegal": "塞内加尔",
+    "Iraq": "伊拉克",
+    "Norway": "挪威",
+
+    # J组
+    "Argentina": "阿根廷",
+    "Algeria": "阿尔及利亚",
+    "Austria": "奥地利",
+    "Jordan": "约旦",
+
+    # K组
+    "Portugal": "葡萄牙",
+    "DR Congo": "民主刚果",
+    "Congo DR": "民主刚果",
+    "Democratic Republic of the Congo": "民主刚果",
+    "Uzbekistan": "乌兹别克斯坦",
+    "Colombia": "哥伦比亚",
+
+    # L组
+    "England": "英格兰",
+    "Croatia": "克罗地亚",
+    "Ghana": "加纳",
+    "Panama": "巴拿马"
 }
 
 STAGE_TRANSLATIONS = {
