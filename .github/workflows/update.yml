@@ -1,0 +1,41 @@
+name: 自动更新 2026 世界杯日历
+
+on:
+  schedule:
+    # 2026年6月11日至7月19日（世界杯期间）每 4 小时执行一次 (UTC 时间 0,4,8,12,16,20 点)
+    - cron: '0 */4 11-30 6,7 *'
+    # 2026年7月1日至7月20日 额外涵盖
+    - cron: '0 */4 1-20 7 *'
+    # 非比赛期：每天早晨 8 点更新一次 (UTC 时间 0 点)
+    - cron: '0 0 * 1-5,8-12 *'
+  workflow_dispatch: # 支持手动触发运行
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+
+    - name: 设置 Python 3.10
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.10"
+
+    - name: 安装依赖
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+    - name: 运行同步脚本并生成 ICS
+      run: python update_calendar.py
+
+    - name: 提交更新到 GitHub 仓库
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add worldcup2026.ics
+        # 仅在有内容变化时才 commit，避免无意义的记录
+        git diff-index --quiet HEAD || git commit -m "自动同步世界杯最新晋级队伍与比分"
+        git push
