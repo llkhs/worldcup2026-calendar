@@ -49,4 +49,4 @@ jobs:
         git remote add gitee https://oauth2:${{ secrets.GITEE_TOKEN }}@gitee.com/papaya365/worldcup2026-calendar.git
         
         # 强制将最新代码推送到 Gitee 的 master 分支（国内 Gitee 默认主分支通常叫 master 或 main）
-        git push -f gitee HEAD:master
+        git push -f gitee HEAD:main
