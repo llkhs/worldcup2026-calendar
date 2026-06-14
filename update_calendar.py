@@ -216,10 +216,10 @@ def generate_ics(matches, team_id_map):
         description = (
             f"⚽ 世界杯对阵：{home_cn} vs {away_cn}\n"
             f"⚽️ 赛事阶段：{stage_display}\n"
-            f"📍 比赛场馆：{venue_info['name']} ({venue_info['city']})\n"
+            f"📍 比赛场馆：{venue_info['name']}\n"
             f"🕒 现场开球时间：{local_date_str} (当地时间)\n"
-            f"【数据来源】世界杯官方赛程数据\n"
-        )
+            f"🌐 赛事 ID：{match_id}\n"
+            )
         event.add('description', description)
         
         if promo_url:
