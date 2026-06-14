@@ -6,13 +6,8 @@ from datetime import datetime, timedelta
 import pytz
 from icalendar import Calendar, Event
 
-# ==================== 1. 推广与变现配置区 (在此修改您的广告) ====================
-# [提示]：在这里您可以随意修改或删除，即使删掉，下方的安全机制也会保证程序不会崩溃。
 CALENDAR_NAME = "2026美加墨世界杯赛程"
-PROMO_TEXT_1 = "📺 2026世界杯高清免卡顿直播 👉 https://tv.cctv.com/live/cctv5"
-PROMO_TEXT_2 = "😋美团外卖大额红包 👉 http://dpurl.cn/PLhevzuz"
-PROMO_TEXT_3 = "🧧京东618无门槛红包 👉 https://u.jd.com/7rFuhfR"
-# PROMO_DIRECT_URL = "https://yourdomain.com/worldcup-guide"
+
 # ==============================================================================
 
 # 双数据源备份
@@ -22,22 +17,22 @@ TEAMS_API = "https://raw.githubusercontent.com/rezarahiminia/worldcup2026/main/f
 
 # 16个主办球场及本地时区映射
 STADIUM_INFO = {
-    "1": {"name": "阿兹特克球场 (Estadio Azteca)", "city": "墨西哥城", "tz": "America/Mexico_City"},
-    "2": {"name": "瓜达拉哈拉体育场 (Estadio Akron / Estadio Guadalajara)", "city": "瓜达拉哈拉", "tz": "America/Mexico_City"},
-    "3": {"name": "蒙特雷体育场 (Estadio BBVA / Estadio Monterrey)", "city": "蒙特雷", "tz": "America/Monterrey"},
-    "4": {"name": "达拉斯体育场 (AT&T Stadium / Dallas Stadium)", "city": "达拉斯 (阿灵顿)", "tz": "America/Chicago"},
-    "5": {"name": "休斯敦体育场 (NRG Stadium / Houston Stadium)", "city": "休斯敦", "tz": "America/Chicago"},
-    "6": {"name": "堪萨斯城体育场 (Arrowhead Stadium / Kansas City Stadium)", "city": "堪萨斯城", "tz": "America/Chicago"},
-    "7": {"name": "亚特兰大体育场 (Mercedes-Benz Stadium / Atlanta Stadium)", "city": "亚特兰大", "tz": "America/New_York"},
-    "8": {"name": "波士顿体育场 (Gillette Stadium / Boston Stadium)", "city": "波士顿 (福克斯堡)", "tz": "America/New_York"},
-    "9": {"name": "费城体育场 (Lincoln Financial Field / Philadelphia Stadium)", "city": "费城", "tz": "America/New_York"},
-    "10": {"name": "迈阿密体育场 (Hard Rock Stadium / Miami Stadium)", "city": "迈阿密", "tz": "America/New_York"},
-    "11": {"name": "纽约/新泽西体育场 (MetLife Stadium / New York New Jersey Stadium)", "city": "纽约/新泽西", "tz": "America/New_York"},
-    "12": {"name": "多伦多体育场 (BMO Field / Toronto Stadium)", "city": "多伦多", "tz": "America/Toronto"},
-    "13": {"name": "温哥华体育场 (BC Place / Vancouver Stadium)", "city": "温哥华", "tz": "America/Vancouver"},
-    "14": {"name": "洛杉矶体育场 (SoFi Stadium / Los Angeles Stadium)", "city": "洛杉矶 (因格尔伍德)", "tz": "America/Los_Angeles"},
-    "15": {"name": "旧金山湾区体育场 (Levi's Stadium / San Francisco Bay Area Stadium)", "city": "旧金山湾区 (圣克拉拉)", "tz": "America/Los_Angeles"},
-    "16": {"name": "西雅图体育场 (Lumen Field / Seattle Stadium)", "city": "西雅图", "tz": "America/Los_Angeles"},
+    "1":  {"name": "阿兹特克体育场 (Estadio Azteca)", "city": "墨西哥城", "tz": "America/Mexico_City"},
+    "2":  {"name": "阿克伦体育场 (Estadio Akron)", "city": "瓜达拉哈拉", "tz": "America/Mexico_City"},
+    "3":  {"name": "BBVA 宫（蒙特雷）(Estadio BBVA)", "city": "蒙特雷", "tz": "America/Monterrey"},
+    "4":  {"name": "AT&T 体育场 (AT&T Stadium, 阿灵顿/达拉斯)", "city": "达拉斯 (阿灵顿)", "tz": "America/Chicago"},
+    "5":  {"name": "NRG 体育场 (NRG Stadium, 休斯敦)", "city": "休斯敦", "tz": "America/Chicago"},
+    "6":  {"name": "箭头体育场 (Arrowhead Stadium, 堪萨斯城)", "city": "堪萨斯城", "tz": "America/Chicago"},
+    "7":  {"name": "梅赛德斯·奔驰体育场 (Mercedes‑Benz Stadium, 亚特兰大)", "city": "亚特兰大", "tz": "America/New_York"},
+    "8":  {"name": "吉列体育场 (Gillette Stadium, 新英格兰/波士顿)", "city": "波士顿 (福克斯堡)", "tz": "America/New_York"},
+    "9":  {"name": "林肯金融球场 (Lincoln Financial Field, 费城)", "city": "费城", "tz": "America/New_York"},
+    "10": {"name": "硬石体育场 (Hard Rock Stadium, 迈阿密)", "city": "迈阿密", "tz": "America/New_York"},
+    "11": {"name": "大都会人寿体育场 (MetLife Stadium, 纽泽西/纽约都会区)", "city": "纽约/新泽西", "tz": "America/New_York"},
+    "12": {"name": "BMO 球场 (BMO Field, 多伦多)", "city": "多伦多", "tz": "America/Toronto"},
+    "13": {"name": "BC 广场 (BC Place, 温哥华)", "city": "温哥华", "tz": "America/Vancouver"},
+    "14": {"name": "SoFi 体育场 (SoFi Stadium, 因格尔伍德/洛杉矶)", "city": "洛杉矶 (因格尔伍德)", "tz": "America/Los_Angeles"},
+    "15": {"name": "李维斯球场 (Levi's Stadium, 圣克拉拉/旧金山湾区)", "city": "旧金山湾区 (圣克拉拉)", "tz": "America/Los_Angeles"},
+    "16": {"name": "卢门球场 (Lumen Field, 西雅图)", "city": "西雅图", "tz": "America/Los_Angeles"},
 }
 
 # 2026世界杯全部 48 支参赛球队（含所有可能出现的拼写变体与民主刚果容灾）
@@ -126,10 +121,7 @@ def fetch_data():
 
 def generate_ics(matches, team_id_map):
     # 【安全防御机制】防御式读取全局配置变量，防止用户在文件顶部误删导致 NameError 崩溃
-    cal_name = globals().get('CALENDAR_NAME', "2026美加墨世界杯赛程")
-    promo_t1 = globals().get('PROMO_TEXT_1', "")
-    promo_t2 = globals().get('PROMO_TEXT_2', "")
-    promo_t3 = globals().get('PROMO_TEXT_3', "")
+    cal_name = globals().get('CALENDAR_NAME', "2026 美加墨世界杯赛程")
     promo_url = globals().get('PROMO_DIRECT_URL', "")
 
     cal = Calendar()
@@ -163,12 +155,32 @@ def generate_ics(matches, team_id_map):
         stage_cn = STAGE_TRANSLATIONS.get(stage_raw, "世界杯比赛")
         
         # 动态拼装标题
+        def get_flag(name):
+            flags = {
+            "美国": "🇺🇸", "墨西哥": "🇲🇽", "加拿大": "🇨🇦", "韩国": "🇰🇷", "南非": "🇿🇦",
+            "捷克": "🇨🇿", "波黑": "🇧🇦", "卡塔尔": "🇶🇦", "瑞士": "🇨🇭", "巴西": "🇧🇷",
+            "摩洛哥": "🇲🇦", "苏格兰": "🏴", "海地": "🇭🇹", "巴拉圭": "🇵🇾", "澳大利亚": "🇦🇺",
+            "土耳其": "🇹🇷", "德国": "🇩🇪", "厄瓜多尔": "🇪🇨", "科特迪瓦": "🇨🇮", "库拉索": "🇨🇼",
+            "荷兰": "🇳🇱", "日本": "🇯🇵", "瑞典": "🇸🇪", "突尼斯": "🇹🇳", "比利时": "🇧🇪",
+            "埃及": "🇪🇬", "伊朗": "🇮🇷", "新西兰": "🇳🇿", "西班牙": "🇪🇸", "佛得角": "🇨🇻",
+            "沙特": "🇸🇦", "乌拉圭": "🇺🇾", "法国": "🇫🇷", "塞内加尔": "🇸🇳", "伊拉克": "🇮🇶",
+            "挪威": "🇳🇴", "阿根廷": "🇦🇷", "阿尔及利亚": "🇩🇿", "奥地利": "🇦🇹", "约旦": "🇯🇴",
+            "葡萄牙": "🇵🇹", "民主刚果": "🇨🇩", "乌兹别克斯坦": "🇺🇿", "哥伦比亚": "🇨🇴",
+            "英格兰": "🏴", "克罗地亚": "🇭🇷", "加纳": "🇬🇭", "巴拿马": "🇵🇦",
+            }
+            return flags.get(name, "")
+
+        home_flag = get_flag(home_cn)
+        away_flag = get_flag(away_cn)
+
         if stage_raw == "group" and group_letter:
             stage_display = f"小组赛 ({group_letter}组)"
-            summary_title = f"🏆 {group_letter}组 | {home_cn} vs {away_cn}"
+            summary_title = f"⚽️ {group_letter}组 | {home_flag}{home_cn} vs {away_cn}{away_flag}"
         else:
             stage_display = stage_cn
-            summary_title = f"🏆 {stage_cn} | {home_cn} vs {away_cn}"
+            summary_title = f"⚽️ {stage_cn} | {home_flag}{home_cn} vs {away_cn}{away_flag}"
+            stage_display = f"小组赛 ({group_letter}组)"
+            summary_title = f"⚽️ {group_letter}组 | {home_flag}{home_cn} vs {away_cn}{away_flag}"
         
         local_date_str = match.get("local_date")
         if not local_date_str:
@@ -191,7 +203,7 @@ def generate_ics(matches, team_id_map):
         
         if match.get("finished") == "TRUE":
             score_str = f"({match.get('home_score')}:{match.get('away_score')})"
-            event.add('summary', f"【已完赛】{home_cn} {score_str} {away_cn}")
+            event.add('summary', f"【已完赛】{home_flag}{home_cn} {score_str} {away_cn}{away_flag}")
         else:
             event.add('summary', summary_title)
             
@@ -203,13 +215,10 @@ def generate_ics(matches, team_id_map):
         
         description = (
             f"⚽ 世界杯对阵：{home_cn} vs {away_cn}\n"
-            f"🏆 赛事阶段：{stage_display}\n"
+            f"⚽️ 赛事阶段：{stage_display}\n"
             f"📍 比赛场馆：{venue_info['name']} ({venue_info['city']})\n"
-            f"🕒 现场开球时间：{local_date_str} (当地时间)\n\n"
-            f"============================\n"
-            f"{promo_t1}\n"
-            f"{promo_t2}\n"
-            f"{promo_t3}"
+            f"🕒 现场开球时间：{local_date_str} (当地时间)\n"
+            f"【数据来源】世界杯官方赛程数据\n"
         )
         event.add('description', description)
         

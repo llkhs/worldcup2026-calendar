@@ -1,10 +1,12 @@
 name: 自动更新 2026 世界杯日历
 
 on:
+  push:
+    branches:
+      - fix # 只有当你推送到 fix 分支时才触发
   schedule:
-    # 彻底简化：全年无休，每 30 分钟雷打不动自动运行一次（最稳妥，100% 避开解析 Bug）
     - cron: '*/30 * * * *'
-  workflow_dispatch:
+  workflow_dispatch: # 保持手动触发，方便你随时在网页上点按钮测试
 
 jobs:
   build:
@@ -34,16 +36,7 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git add worldcup2026.ics
-        # 仅在有内容变化时才 commit
-        git diff-index --quiet HEAD || git commit -m "自动同步世界杯最新对阵 [skip ci]"
-        git push origin HEAD:main
-
-    # ============= ✨ 新增：全自动推送到 Gitee =============
-    - name: 自动同步到 Gitee 仓库
-      run: |
-        # 请把下方 URL 中的 [你的Gitee用户名] 和 [你的Gitee仓库名] 替换为您自己的真实名字！
-        # 例如：https://oauth2:...@gitee.com/zhangsan/worldcup-calendar.git
-        git remote add gitee https://oauth2:${{ secrets.GITEE_TOKEN }}@gitee.com/papaya365/worldcup2026-calendar.git
         
-        # 强制将最新代码推送到 Gitee 的 master 分支（国内 Gitee 默认主分支通常叫 master 或 main）
-        git push -f gitee HEAD:main
+        # 既然在 fix 分支跑，直接 commit 并 push 到当前分支即可，更安全规范
+        git diff-index --quiet HEAD || git commit -m "自动同步世界杯最新对阵 [skip ci]"
+        git push origin HEAD
