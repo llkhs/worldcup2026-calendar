@@ -19,7 +19,7 @@ TEAMS_API = "https://raw.githubusercontent.com/rezarahiminia/worldcup2026/main/f
 STADIUM_INFO = {
     "1":  {"name": "阿兹特克体育场 (Estadio Azteca)", "city": "墨西哥城", "tz": "America/Mexico_City"},
     "2":  {"name": "阿克伦体育场 (Estadio Akron)", "city": "瓜达拉哈拉", "tz": "America/Mexico_City"},
-    "3":  {"name": "BBVA 宫（蒙特雷）(Estadio BBVA)", "city": "蒙特雷", "tz": "America/Monterrey"},
+    "3":  {"name": "BBVA 体育场 (Estadio BBVA)", "city": "蒙特雷", "tz": "America/Monterrey"},
     "4":  {"name": "AT&T 体育场 (AT&T Stadium, 阿灵顿/达拉斯)", "city": "达拉斯 (阿灵顿)", "tz": "America/Chicago"},
     "5":  {"name": "NRG 体育场 (NRG Stadium, 休斯敦)", "city": "休斯敦", "tz": "America/Chicago"},
     "6":  {"name": "箭头体育场 (Arrowhead Stadium, 堪萨斯城)", "city": "堪萨斯城", "tz": "America/Chicago"},
@@ -29,7 +29,7 @@ STADIUM_INFO = {
     "10": {"name": "硬石体育场 (Hard Rock Stadium, 迈阿密)", "city": "迈阿密", "tz": "America/New_York"},
     "11": {"name": "大都会人寿体育场 (MetLife Stadium, 纽泽西/纽约都会区)", "city": "纽约/新泽西", "tz": "America/New_York"},
     "12": {"name": "BMO 球场 (BMO Field, 多伦多)", "city": "多伦多", "tz": "America/Toronto"},
-    "13": {"name": "BC 广场 (BC Place, 温哥华)", "city": "温哥华", "tz": "America/Vancouver"},
+    "13": {"name": "BC 广场体育场 (BC Place, 温哥华)", "city": "温哥华", "tz": "America/Vancouver"},
     "14": {"name": "SoFi 体育场 (SoFi Stadium, 因格尔伍德/洛杉矶)", "city": "洛杉矶 (因格尔伍德)", "tz": "America/Los_Angeles"},
     "15": {"name": "李维斯球场 (Levi's Stadium, 圣克拉拉/旧金山湾区)", "city": "旧金山湾区 (圣克拉拉)", "tz": "America/Los_Angeles"},
     "16": {"name": "卢门球场 (Lumen Field, 西雅图)", "city": "西雅图", "tz": "America/Los_Angeles"},
