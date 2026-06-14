@@ -214,7 +214,7 @@ def generate_ics(matches, team_id_map):
         event.add('location', f"{venue_info['name']}, {venue_info['city']}")
         
         description = (
-            f"⚽ 世界杯对阵：{home_cn} vs {away_cn}\n"
+            f"⚽ 世界杯对阵：{home_flag}{home_cn} vs {away_cn}{away_flag}\n"
             f"⚽️ 赛事阶段：{stage_display}\n"
             f"📍 比赛场馆：{venue_info['name']}\n"
             f"🕒 现场开球时间：{local_date_str} (当地时间)\n"
