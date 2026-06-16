@@ -16,7 +16,7 @@ jobs:
     - name: 检出代码
       uses: actions/checkout@v4
       with:
-        fetch-depth: 0 # 获取完整提交历史以供推送
+        fetch-depth: 0 # 获取完整提交历史以供推送至 Gitee
 
     - name: 设置 Python 3.10
       uses: actions/setup-python@v5
@@ -28,15 +28,24 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-    - name: 运行同步脚本并生成 ICS
+    - name: 运行同步脚本并生成日历
       run: python update_calendar.py
 
     - name: 提交更新到 GitHub 仓库
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        
+        # 1. 优先安全添加日历主文件
         git add worldcup2026.ics
         
-        # 既然在 fix 分支跑，直接 commit 并 push 到当前分支即可，更安全规范
+        # 2. 🟢【防御性 Git 添加】：只有当比分库文件真实存在时才添加，不存在则安全跳过，绝不报错崩溃！
+        if [ -f "worldcup2026_results.json" ]; then
+          git add worldcup2026_results.json
+          echo "✅ 成功找到比分锁定库，已加入提交列表。"
+        else
+          echo "⚠️ 未检测到比分锁定库，跳过添加，继续下一步。"
+        fi
+        
         git diff-index --quiet HEAD || git commit -m "自动同步世界杯最新对阵 [skip ci]"
         git push origin HEAD

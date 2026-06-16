@@ -15,6 +15,9 @@ PRIMARY_API = "https://worldcup26.ir/get/games"
 FALLBACK_API = "https://raw.githubusercontent.com/rezarahiminia/worldcup2026/main/football.matches.json"
 TEAMS_API = "https://raw.githubusercontent.com/rezarahiminia/worldcup2026/main/football.teams.json"
 
+# 本地历史比分锁定文件
+RESULTS_CACHE_FILE = "worldcup2026_results.json"
+
 # 16个主办球场及本地时区映射
 STADIUM_INFO = {
     "1":  {"name": "阿兹特克体育场 (Estadio Azteca)", "city": "墨西哥城", "tz": "America/Mexico_City"},
@@ -35,7 +38,7 @@ STADIUM_INFO = {
     "16": {"name": "卢门球场 (Lumen Field, 西雅图)", "city": "西雅图", "tz": "America/Los_Angeles"},
 }
 
-# 2026世界杯全部 48 支参赛球队（含所有可能出现的拼写变体与民主刚果容灾）
+# 2026世界杯全部 48 支参赛球队
 TEAM_TRANSLATIONS = {
     "USA": "美国", "United States": "美国", "Mexico": "墨西哥", "Canada": "加拿大",
     "Korea Republic": "韩国", "Republic of Korea": "韩国", "South Korea": "韩国",
@@ -51,11 +54,8 @@ TEAM_TRANSLATIONS = {
     "Argentina": "阿根廷", "Algeria": "阿尔及利亚", "Austria": "奥地利", "Jordan": "约旦",
     "Portugal": "葡萄牙", "DR Congo": "民主刚果", "Congo DR": "民主刚果", "Uzbekistan": "乌兹别克斯坦", "Colombia": "哥伦比亚",
     "England": "英格兰", "Croatia": "克罗地亚", "Ghana": "加纳", "Panama": "巴拿马",
-    # 民主刚果拼写补充（防止部分 API 漏掉 the 或者使用缩写）
-    "Democratic Republic of Congo": "民主刚果",
-    "Democratic Republic of the Congo": "民主刚果",
-    "Congo, Dem. Rep.": "民主刚果",
-    "Congo, DR": "民主刚果"
+    "Democratic Republic of Congo": "民主刚果", "Democratic Republic of the Congo": "民主刚果",
+    "Congo, Dem. Rep.": "民主刚果", "Congo, DR": "民主刚果"
 }
 
 STAGE_TRANSLATIONS = {
@@ -73,7 +73,6 @@ def translate_team(name):
     if name_clean in lower_translations:
         return lower_translations[name_clean]
     
-    # 未确定队伍占位符汉化
     placeholders = {
         "winner group": "小组第一",
         "runner-up group": "小组第二",
@@ -101,22 +100,24 @@ def fetch_data():
                 team_id_map[str(t.get("id"))] = t.get("name_en")
             print("队伍 ID 映射加载成功！")
     except Exception as e:
-        print(f"队伍映射加载失败 (程序将依靠硬编码字段): {e}")
+        print(f"队伍映射加载失败: {e}")
 
     try:
-        print("正在从主 API 获取比赛数据...")
+        print("🔗 正在尝试连接实时比分 API [PRIMARY_API]...")
         res = requests.get(PRIMARY_API, timeout=15)
         if res.status_code == 200:
+            print("🚀 【成功】已连接到实时数据源！正在使用实时比分生成日历。")
             return res.json().get("games", []), team_id_map
     except Exception as e:
-        print(f"主 API 请求失败: {e}，正在切换至备用数据源...")
+        print(f"❌ 【失败】无法连接到实时 API，报错原因为: {e}")
+        print("⚠️ 【警告】程序已启用静态备份源。注意：备份源仅含静态赛程，【无实时完赛比分】！")
         
     try:
         res = requests.get(FALLBACK_API, timeout=15)
         if res.status_code == 200:
             return res.json(), team_id_map
     except Exception as e:
-        print(f"备用数据源请求失败: {e}")
+        print(f"❌ 备份源也加载失败: {e}")
         sys.exit(1)
 
 def generate_ics(matches, team_id_map):
@@ -130,26 +131,58 @@ def generate_ics(matches, team_id_map):
     cal.add('x-wr-calname', cal_name)
     cal.add('x-wr-timezone', 'UTC')
 
+    # 加载本地历史已锁定的比分
+    saved_results = {}
+    if os.path.exists(RESULTS_CACHE_FILE):
+        try:
+            with open(RESULTS_CACHE_FILE, "r", encoding="utf-8") as f:
+                saved_results = json.load(f)
+            print(f"📁 成功加载本地历史比分库，共包含 {len(saved_results)} 场完赛数据。")
+        except Exception as e:
+            print(f"⚠️ 读取历史比分缓存失败: {e}")
+
     for match in matches:
-        match_id = match.get("id")
+        match_id = str(match.get("id"))
         stadium_id = str(match.get("stadium_id", "1"))
         venue_info = STADIUM_INFO.get(stadium_id, {"name": "美加墨体育场", "city": "主办城市", "tz": "America/Mexico_City"})
 
         # 精准组装队伍英文名
-        home_en = match.get("home_team_name_en")
+        home_en = None
+        for key in ["home_team_name_en", "homeTeamNameEn", "home_team_name"]:
+            if match.get(key):
+                home_en = match.get(key)
+                break
         if not home_en:
-            home_id = str(match.get("home_team_id", ""))
-            home_en = team_id_map.get(home_id) or match.get("home_team_label")
+            for obj_key in ["homeTeam", "home_team"]:
+                obj = match.get(obj_key)
+                if isinstance(obj, dict):
+                    home_en = obj.get("name") or obj.get("name_en")
+                    if home_en:
+                        break
+        if not home_en:
+            home_id = str(match.get("home_team_id") or match.get("homeTeamId") or "")
+            home_en = team_id_map.get(home_id) or match.get("home_team_label") or match.get("homeTeamLabel")
             
-        away_en = match.get("away_team_name_en")
+        away_en = None
+        for key in ["away_team_name_en", "awayTeamNameEn", "away_team_name"]:
+            if match.get(key):
+                away_en = match.get(key)
+                break
         if not away_en:
-            away_id = str(match.get("away_team_id", ""))
-            away_en = team_id_map.get(away_id) or match.get("away_team_label")
-        
+            for obj_key in ["awayTeam", "away_team"]:
+                obj = match.get(obj_key)
+                if isinstance(obj, dict):
+                    away_en = obj.get("name") or obj.get("name_en")
+                    if away_en:
+                        break
+        if not away_en:
+            away_id = str(match.get("away_team_id") or match.get("awayTeamId") or "")
+            away_en = team_id_map.get(away_id) or match.get("away_team_label") or match.get("awayTeamLabel")
+
         home_cn = translate_team(home_en)
         away_cn = translate_team(away_en)
         
-        # 提取分组和阶段信息
+        # 提取分组和阶段
         group_letter = match.get("group")
         stage_raw = match.get("type", "group")
         stage_cn = STAGE_TRANSLATIONS.get(stage_raw, "世界杯比赛")
@@ -191,19 +224,61 @@ def generate_ics(matches, team_id_map):
             stadium_tz = pytz.timezone(venue_info["tz"])
             dt_localized = stadium_tz.localize(dt_local)
             dt_utc = dt_localized.astimezone(pytz.utc)
-            print(f"✅ [场次 {match_id}] {home_cn} vs {away_cn} | 当地时间: {local_date_str} ({venue_info['city']}) -> 已成功校准为 UTC: {dt_utc.strftime('%Y-%m-%d %H:%M:%S')}Z")
         except Exception as e:
             dt_local = datetime.strptime(local_date_str, "%m/%d/%Y %H:%M")
             stadium_tz = pytz.timezone("America/Mexico_City")
             dt_localized = stadium_tz.localize(dt_local)
             dt_utc = dt_localized.astimezone(pytz.utc)
-            print(f"⚠️ [场次 {match_id}] 转换发生意外，已启用安全时区校准。")
 
         event = Event()
         
-        if match.get("finished") == "TRUE":
-            score_str = f"({match.get('home_score')}:{match.get('away_score')})"
-            event.add('summary', f"【已完赛】{home_flag}{home_cn} {score_str} {away_cn}{away_flag}")
+        # ==================== 完赛状态与比分锁定逻辑 ====================
+        is_finished = False
+        h_score = "0"
+        a_score = "0"
+
+        # 🟢 【第一优先级】：如果本地比分库里已经锁定了这场的比分，直接强行套用！
+        if match_id in saved_results and saved_results[match_id].get("finished"):
+            is_finished = True
+            h_score = str(saved_results[match_id].get("home_score", "0"))
+            a_score = str(saved_results[match_id].get("away_score", "0"))
+        else:
+            # 🔵 【第二优先级】：本地没有，从当前拉取的 API 数据中分析
+            finished_val = match.get("finished")
+            status_val = match.get("status")
+            
+            if isinstance(finished_val, bool):
+                is_finished = finished_val
+            elif isinstance(finished_val, str):
+                is_finished = finished_val.strip().upper() in ["TRUE", "YES", "1"]
+            elif isinstance(finished_val, (int, float)):
+                is_finished = int(finished_val) == 1
+                
+            if not is_finished and status_val:
+                is_finished = str(status_val).strip().lower() in ["completed", "finished", "ended", "true"]
+                
+            if is_finished:
+                # 提取比分
+                h_score_val = match.get("home_score") if match.get("home_score") is not None else match.get("homeScore")
+                a_score_val = match.get("away_score") if match.get("away_score") is not None else match.get("awayScore")
+                
+                if h_score_val is None and isinstance(match.get("homeTeam"), dict):
+                    h_score_val = match.get("homeTeam").get("score")
+                if a_score_val is None and isinstance(match.get("awayTeam"), dict):
+                    a_score_val = match.get("awayTeam").get("score")
+
+                h_score = "0" if h_score_val is None or str(h_score_val).strip().lower() == "null" else str(h_score_val)
+                a_score = "0" if a_score_val is None or str(a_score_val).strip().lower() == "null" else str(a_score_val)
+                
+                # 写入本地内存，准备持久化保存
+                saved_results[match_id] = {
+                    "finished": True,
+                    "home_score": h_score,
+                    "away_score": a_score
+                }
+            
+        if is_finished:
+            event.add('summary', f"【已完赛】{home_flag}{home_cn} ({h_score}:{a_score}) {away_cn}{away_flag}")
         else:
             event.add('summary', summary_title)
             
@@ -227,8 +302,18 @@ def generate_ics(matches, team_id_map):
             
         cal.add_component(event)
 
+    # 保存日历
     with open("worldcup2026.ics", "wb") as f:
         f.write(cal.to_ical())
+        
+    # 保存本地比分锁定文件
+    try:
+        with open(RESULTS_CACHE_FILE, "w", encoding="utf-8") as f:
+            json.dump(saved_results, f, ensure_ascii=False, indent=4)
+        print(f"💾 比分数据已成功锁定并保存至: {RESULTS_CACHE_FILE}")
+    except Exception as e:
+        print(f"⚠️ 保存历史比分库失败: {e}")
+        
     print("日历文件 worldcup2026.ics 生成完毕。")
 
 if __name__ == "__main__":
