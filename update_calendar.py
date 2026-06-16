@@ -1,10 +1,12 @@
 import os
 import sys
 import json
+import time
 import requests
 from datetime import datetime, timedelta
 import pytz
 from icalendar import Calendar, Event
+
 
 CALENDAR_NAME = "2026美加墨世界杯赛程"
 
@@ -102,15 +104,30 @@ def fetch_data():
     except Exception as e:
         print(f"队伍映射加载失败: {e}")
 
-    try:
-        print("🔗 正在尝试连接实时比分 API [PRIMARY_API]...")
-        res = requests.get(PRIMARY_API, timeout=15)
-        if res.status_code == 200:
-            print("🚀 【成功】已连接到实时数据源！正在使用实时比分生成日历。")
-            return res.json().get("games", []), team_id_map
-    except Exception as e:
-        print(f"❌ 【失败】无法连接到实时 API，报错原因为: {e}")
-        print("⚠️ 【警告】程序已启用静态备份源。注意：备份源仅含静态赛程，【无实时完赛比分】！")
+    # 对 PRIMARY_API 增加重试机制：最多尝试 3 次，每次失败后等待 8 秒（显示倒计时）再重试
+    max_retries = 5
+    for attempt in range(1, max_retries + 1):
+        try:
+            print(f"🔗 正在尝试连接实时比分 API [PRIMARY_API]... 第{attempt}次")
+            res = requests.get(PRIMARY_API, timeout=15)
+            if res.status_code == 200:
+                print("🚀 【成功】已连接到实时数据源！正在使用实时比分生成日历。")
+                return res.json().get("games", []), team_id_map
+            else:
+                print(f"⚠️ 响应状态码: {res.status_code}")
+        except Exception as e:
+            print(f"❌ 第{attempt}次连接失败: {e}")
+
+        # 如果还会重试，做 8 秒倒计时提示
+        if attempt < max_retries:
+            print("将在 8 秒后重试（倒计时）...")
+            for sec in range(8, 0, -1):
+                print(f"  {sec}...", end="", flush=True)
+                time.sleep(1)
+            print()
+
+    print("❌ 已达到重试上限，未能连接到实时 API。")
+    print("⚠️ 【警告】程序将切换到静态备份源。注意：备份源仅含静态赛程，【无实时完赛比分】！")
         
     try:
         res = requests.get(FALLBACK_API, timeout=15)
@@ -273,8 +290,16 @@ def generate_ics(matches, team_id_map):
                 # 写入本地内存，准备持久化保存
                 saved_results[match_id] = {
                     "finished": True,
+                    "home_team": home_cn,
                     "home_score": h_score,
-                    "away_score": a_score
+                    "away_score": a_score,
+                    "away_team": away_cn,
+                    "local_date": local_date_str,
+                    "stadium": venue_info["name"],
+                    "city": venue_info["city"],
+                    "stage": stage_display,
+                    "summary": f"【已完赛】{home_flag}{home_cn} ({h_score}:{a_score}) {away_cn}{away_flag}"
+
                 }
             
         if is_finished:
