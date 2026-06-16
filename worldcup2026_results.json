@@ -1,39 +1,15 @@
 {
-    "6": {
+    "1": {
         "finished": true,
-        "home_team": "澳大利亚",
+        "home_team": "墨西哥",
         "home_score": "2",
         "away_score": "0",
-        "away_team": "土耳其",
-        "local_date": "06/13/2026 21:00",
-        "stadium": "BC 广场体育场 (BC Place, 温哥华)",
-        "city": "温哥华",
-        "stage": "小组赛 (D组)",
-        "summary": "【已完赛】🇦🇺澳大利亚 (2:0) 土耳其🇹🇷"
-    },
-    "8": {
-        "finished": true,
-        "home_team": "卡塔尔",
-        "home_score": "1",
-        "away_score": "1",
-        "away_team": "瑞士",
-        "local_date": "06/13/2026 12:00",
-        "stadium": "李维斯球场 (Levi's Stadium, 圣克拉拉/旧金山湾区)",
-        "city": "旧金山湾区 (圣克拉拉)",
-        "stage": "小组赛 (B组)",
-        "summary": "【已完赛】🇶🇦卡塔尔 (1:1) 瑞士🇨🇭"
-    },
-    "5": {
-        "finished": true,
-        "home_team": "海地",
-        "home_score": "0",
-        "away_score": "1",
-        "away_team": "苏格兰",
-        "local_date": "06/13/2026 21:00",
-        "stadium": "林肯金融球场 (Lincoln Financial Field, 费城)",
-        "city": "费城",
-        "stage": "小组赛 (C组)",
-        "summary": "【已完赛】🇭🇹海地 (0:1) 苏格兰🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+        "away_team": "南非",
+        "local_date": "06/11/2026 13:00",
+        "stadium": "阿兹特克体育场 (Estadio Azteca)",
+        "city": "墨西哥城",
+        "stage": "小组赛 (A组)",
+        "summary": "【已完赛】🇲🇽墨西哥 (2:0) 南非🇿🇦"
     },
     "2": {
         "finished": true,
@@ -47,6 +23,18 @@
         "stage": "小组赛 (A组)",
         "summary": "【已完赛】🇰🇷韩国 (2:1) 捷克🇨🇿"
     },
+    "3": {
+        "finished": true,
+        "home_team": "加拿大",
+        "home_score": "1",
+        "away_score": "1",
+        "away_team": "波黑",
+        "local_date": "06/12/2026 15:00",
+        "stadium": "BMO 球场 (BMO Field, 多伦多)",
+        "city": "多伦多",
+        "stage": "小组赛 (B组)",
+        "summary": "【已完赛】🇨🇦加拿大 (1:1) 波黑🇧🇦"
+    },
     "4": {
         "finished": true,
         "home_team": "美国",
@@ -59,65 +47,17 @@
         "stage": "小组赛 (D组)",
         "summary": "【已完赛】🇺🇸美国 (4:1) 巴拉圭🇵🇾"
     },
-    "17": {
+    "8": {
         "finished": true,
-        "home_team": "法国",
-        "home_score": "3",
-        "away_score": "1",
-        "away_team": "塞内加尔",
-        "local_date": "06/16/2026 15:00",
-        "stadium": "大都会人寿体育场 (MetLife Stadium, 纽泽西/纽约都会区)",
-        "city": "纽约/新泽西",
-        "stage": "小组赛 (I组)",
-        "summary": "【已完赛】🇫🇷法国 (3:1) 塞内加尔🇸🇳"
-    },
-    "9": {
-        "finished": true,
-        "home_team": "科特迪瓦",
+        "home_team": "卡塔尔",
         "home_score": "1",
-        "away_score": "0",
-        "away_team": "厄瓜多尔",
-        "local_date": "06/14/2026 19:00",
-        "stadium": "硬石体育场 (Hard Rock Stadium, 迈阿密)",
-        "city": "迈阿密",
-        "stage": "小组赛 (E组)",
-        "summary": "【已完赛】🇨🇮科特迪瓦 (1:0) 厄瓜多尔🇪🇨"
-    },
-    "10": {
-        "finished": true,
-        "home_team": "德国",
-        "home_score": "7",
         "away_score": "1",
-        "away_team": "库拉索",
-        "local_date": "06/14/2026 12:00",
-        "stadium": "NRG 体育场 (NRG Stadium, 休斯敦)",
-        "city": "休斯敦",
-        "stage": "小组赛 (E组)",
-        "summary": "【已完赛】🇩🇪德国 (7:1) 库拉索🇨🇼"
-    },
-    "12": {
-        "finished": true,
-        "home_team": "瑞典",
-        "home_score": "5",
-        "away_score": "1",
-        "away_team": "突尼斯",
-        "local_date": "06/14/2026 20:00",
-        "stadium": "BBVA 体育场 (Estadio BBVA)",
-        "city": "蒙特雷",
-        "stage": "小组赛 (F组)",
-        "summary": "【已完赛】🇸🇪瑞典 (5:1) 突尼斯🇹🇳"
-    },
-    "1": {
-        "finished": true,
-        "home_team": "墨西哥",
-        "home_score": "2",
-        "away_score": "0",
-        "away_team": "南非",
-        "local_date": "06/11/2026 13:00",
-        "stadium": "阿兹特克体育场 (Estadio Azteca)",
-        "city": "墨西哥城",
-        "stage": "小组赛 (A组)",
-        "summary": "【已完赛】🇲🇽墨西哥 (2:0) 南非🇿🇦"
+        "away_team": "瑞士",
+        "local_date": "06/13/2026 12:00",
+        "stadium": "李维斯球场 (Levi's Stadium, 圣克拉拉/旧金山湾区)",
+        "city": "旧金山湾区 (圣克拉拉)",
+        "stage": "小组赛 (B组)",
+        "summary": "【已完赛】🇶🇦卡塔尔 (1:1) 瑞士🇨🇭"
     },
     "7": {
         "finished": true,
@@ -131,6 +71,42 @@
         "stage": "小组赛 (C组)",
         "summary": "【已完赛】🇧🇷巴西 (1:1) 摩洛哥🇲🇦"
     },
+    "5": {
+        "finished": true,
+        "home_team": "海地",
+        "home_score": "0",
+        "away_score": "1",
+        "away_team": "苏格兰",
+        "local_date": "06/13/2026 21:00",
+        "stadium": "林肯金融球场 (Lincoln Financial Field, 费城)",
+        "city": "费城",
+        "stage": "小组赛 (C组)",
+        "summary": "【已完赛】🇭🇹海地 (0:1) 苏格兰🏴"
+    },
+    "6": {
+        "finished": true,
+        "home_team": "澳大利亚",
+        "home_score": "2",
+        "away_score": "0",
+        "away_team": "土耳其",
+        "local_date": "06/13/2026 21:00",
+        "stadium": "BC 广场体育场 (BC Place, 温哥华)",
+        "city": "温哥华",
+        "stage": "小组赛 (D组)",
+        "summary": "【已完赛】🇦🇺澳大利亚 (2:0) 土耳其🇹🇷"
+    },
+    "10": {
+        "finished": true,
+        "home_team": "德国",
+        "home_score": "7",
+        "away_score": "1",
+        "away_team": "库拉索",
+        "local_date": "06/14/2026 12:00",
+        "stadium": "NRG 体育场 (NRG Stadium, 休斯敦)",
+        "city": "休斯敦",
+        "stage": "小组赛 (E组)",
+        "summary": "【已完赛】🇩🇪德国 (7:1) 库拉索🇨🇼"
+    },
     "11": {
         "finished": true,
         "home_team": "荷兰",
@@ -142,6 +118,30 @@
         "city": "达拉斯 (阿灵顿)",
         "stage": "小组赛 (F组)",
         "summary": "【已完赛】🇳🇱荷兰 (2:2) 日本🇯🇵"
+    },
+    "9": {
+        "finished": true,
+        "home_team": "科特迪瓦",
+        "home_score": "1",
+        "away_score": "0",
+        "away_team": "厄瓜多尔",
+        "local_date": "06/14/2026 19:00",
+        "stadium": "硬石体育场 (Hard Rock Stadium, 迈阿密)",
+        "city": "迈阿密",
+        "stage": "小组赛 (E组)",
+        "summary": "【已完赛】🇨🇮科特迪瓦 (1:0) 厄瓜多尔🇪🇨"
+    },
+    "12": {
+        "finished": true,
+        "home_team": "瑞典",
+        "home_score": "5",
+        "away_score": "1",
+        "away_team": "突尼斯",
+        "local_date": "06/14/2026 20:00",
+        "stadium": "BBVA 体育场 (Estadio BBVA)",
+        "city": "蒙特雷",
+        "stage": "小组赛 (F组)",
+        "summary": "【已完赛】🇸🇪瑞典 (5:1) 突尼斯🇹🇳"
     },
     "14": {
         "finished": true,
@@ -155,29 +155,17 @@
         "stage": "小组赛 (H组)",
         "summary": "【已完赛】🇪🇸西班牙 (0:0) 佛得角🇨🇻"
     },
-    "16": {
+    "15": {
         "finished": true,
-        "home_team": "沙特",
+        "home_team": "比利时",
         "home_score": "1",
         "away_score": "1",
-        "away_team": "乌拉圭",
-        "local_date": "06/15/2026 18:00",
-        "stadium": "吉列体育场 (Gillette Stadium, 新英格兰/波士顿)",
-        "city": "波士顿 (福克斯堡)",
-        "stage": "小组赛 (H组)",
-        "summary": "【已完赛】🇸🇦沙特 (1:1) 乌拉圭🇺🇾"
-    },
-    "3": {
-        "finished": true,
-        "home_team": "加拿大",
-        "home_score": "1",
-        "away_score": "1",
-        "away_team": "波黑",
-        "local_date": "06/12/2026 15:00",
-        "stadium": "BMO 球场 (BMO Field, 多伦多)",
-        "city": "多伦多",
-        "stage": "小组赛 (B组)",
-        "summary": "【已完赛】🇨🇦加拿大 (1:1) 波黑🇧🇦"
+        "away_team": "埃及",
+        "local_date": "06/15/2026 12:00",
+        "stadium": "SoFi 体育场 (SoFi Stadium, 因格尔伍德/洛杉矶)",
+        "city": "洛杉矶 (因格尔伍德)",
+        "stage": "小组赛 (G组)",
+        "summary": "【已完赛】🇧🇪比利时 (1:1) 埃及🇪🇬"
     },
     "13": {
         "finished": true,
@@ -191,16 +179,28 @@
         "stage": "小组赛 (G组)",
         "summary": "【已完赛】🇮🇷伊朗 (2:2) 新西兰🇳🇿"
     },
-    "15": {
+    "16": {
         "finished": true,
-        "home_team": "比利时",
+        "home_team": "沙特",
         "home_score": "1",
         "away_score": "1",
-        "away_team": "埃及",
-        "local_date": "06/15/2026 12:00",
-        "stadium": "SoFi 体育场 (SoFi Stadium, 因格尔伍德/洛杉矶)",
-        "city": "洛杉矶 (因格尔伍德)",
-        "stage": "小组赛 (G组)",
-        "summary": "【已完赛】🇧🇪比利时 (1:1) 埃及🇪🇬"
+        "away_team": "乌拉圭",
+        "local_date": "06/15/2026 18:00",
+        "stadium": "吉列体育场 (Gillette Stadium, 新英格兰/波士顿)",
+        "city": "波士顿 (福克斯堡)",
+        "stage": "小组赛 (H组)",
+        "summary": "【已完赛】🇸🇦沙特 (1:1) 乌拉圭🇺🇾"
+    },
+    "17": {
+        "finished": true,
+        "home_team": "法国",
+        "home_score": "3",
+        "away_score": "1",
+        "away_team": "塞内加尔",
+        "local_date": "06/16/2026 15:00",
+        "stadium": "大都会人寿体育场 (MetLife Stadium, 纽泽西/纽约都会区)",
+        "city": "纽约/新泽西",
+        "stage": "小组赛 (I组)",
+        "summary": "【已完赛】🇫🇷法国 (3:1) 塞内加尔🇸🇳"
     }
 }
