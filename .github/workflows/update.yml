@@ -5,7 +5,7 @@ on:
     branches:
       - fix # 只有当你推送到 fix 分支时才触发
   schedule:
-    - cron: '0 14,15,16,17,18,19,20,21,22,23,0,1,2 * * *'
+    - cron: '0 * * * *'
   workflow_dispatch: # 保持手动触发，方便你随时在网页上点按钮测试
 
 jobs:
