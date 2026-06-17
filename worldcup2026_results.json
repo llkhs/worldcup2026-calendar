@@ -238,5 +238,29 @@
         "city": "堪萨斯城",
         "stage": "小组赛 (J组)",
         "summary": "【已完赛】🇦🇷阿根廷 (3:0) 阿尔及利亚🇩🇿"
+    },
+    "21": {
+        "finished": true,
+        "home_team": "葡萄牙",
+        "home_score": "1",
+        "away_score": "1",
+        "away_team": "民主刚果",
+        "local_date": "06/17/2026 12:00",
+        "stadium": "NRG 体育场 (NRG Stadium, 休斯敦)",
+        "city": "休斯敦",
+        "stage": "小组赛 (K组)",
+        "summary": "【已完赛】🇵🇹葡萄牙 (1:1) 民主刚果🇨🇩"
+    },
+    "22": {
+        "finished": true,
+        "home_team": "英格兰",
+        "home_score": "4",
+        "away_score": "2",
+        "away_team": "克罗地亚",
+        "local_date": "06/17/2026 15:00",
+        "stadium": "AT&T 体育场 (AT&T Stadium, 阿灵顿/达拉斯)",
+        "city": "达拉斯 (阿灵顿)",
+        "stage": "小组赛 (L组)",
+        "summary": "【已完赛】🏴󠁧󠁢󠁥󠁮󠁧󠁿英格兰 (4:2) 克罗地亚🇭🇷"
     }
 }
