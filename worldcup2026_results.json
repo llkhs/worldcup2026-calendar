@@ -286,5 +286,17 @@
         "city": "多伦多",
         "stage": "小组赛 (L组)",
         "summary": "【已完赛】🇬🇭加纳 (1:0) 巴拿马🇵🇦"
+    },
+    "28": {
+        "finished": true,
+        "home_team": "捷克",
+        "home_score": "1",
+        "away_score": "1",
+        "away_team": "南非",
+        "local_date": "06/18/2026 12:00",
+        "stadium": "梅赛德斯·奔驰体育场 (Mercedes‑Benz Stadium, 亚特兰大)",
+        "city": "亚特兰大",
+        "stage": "小组赛 (A组)",
+        "summary": "【已完赛】🇨🇿捷克 (1:1) 南非🇿🇦"
     }
 }
