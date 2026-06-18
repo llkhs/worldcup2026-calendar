@@ -298,5 +298,17 @@
         "city": "亚特兰大",
         "stage": "小组赛 (A组)",
         "summary": "【已完赛】🇨🇿捷克 (1:1) 南非🇿🇦"
+    },
+    "26": {
+        "finished": true,
+        "home_team": "瑞士",
+        "home_score": "4",
+        "away_score": "1",
+        "away_team": "波黑",
+        "local_date": "06/18/2026 12:00",
+        "stadium": "卢门球场 (Lumen Field, 西雅图)",
+        "city": "西雅图",
+        "stage": "小组赛 (B组)",
+        "summary": "【已完赛】🇨🇭瑞士 (4:1) 波黑🇧🇦"
     }
 }
