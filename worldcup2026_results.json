@@ -334,5 +334,17 @@
         "city": "瓜达拉哈拉",
         "stage": "小组赛 (A组)",
         "summary": "【已完赛】🇲🇽墨西哥 (1:0) 韩国🇰🇷"
+    },
+    "31": {
+        "finished": true,
+        "home_team": "美国",
+        "home_score": "2",
+        "away_score": "0",
+        "away_team": "澳大利亚",
+        "local_date": "06/19/2026 12:00",
+        "stadium": "SoFi 体育场 (SoFi Stadium, 因格尔伍德/洛杉矶)",
+        "city": "洛杉矶 (因格尔伍德)",
+        "stage": "小组赛 (D组)",
+        "summary": "【已完赛】🇺🇸美国 (2:0) 澳大利亚🇦🇺"
     }
 }
