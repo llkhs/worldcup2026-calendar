@@ -322,5 +322,17 @@
         "city": "温哥华",
         "stage": "小组赛 (B组)",
         "summary": "【已完赛】🇨🇦加拿大 (6:0) 卡塔尔🇶🇦"
+    },
+    "25": {
+        "finished": true,
+        "home_team": "墨西哥",
+        "home_score": "1",
+        "away_score": "0",
+        "away_team": "韩国",
+        "local_date": "06/18/2026 19:00",
+        "stadium": "阿克伦体育场 (Estadio Akron)",
+        "city": "瓜达拉哈拉",
+        "stage": "小组赛 (A组)",
+        "summary": "【已完赛】🇲🇽墨西哥 (1:0) 韩国🇰🇷"
     }
 }
