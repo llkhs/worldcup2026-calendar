@@ -382,5 +382,17 @@
         "city": "旧金山湾区 (圣克拉拉)",
         "stage": "小组赛 (D组)",
         "summary": "【已完赛】🇹🇷土耳其 (0:1) 巴拉圭🇵🇾"
+    },
+    "35": {
+        "finished": true,
+        "home_team": "荷兰",
+        "home_score": "5",
+        "away_score": "1",
+        "away_team": "瑞典",
+        "local_date": "06/20/2026 12:00",
+        "stadium": "NRG 体育场 (NRG Stadium, 休斯敦)",
+        "city": "休斯敦",
+        "stage": "小组赛 (F组)",
+        "summary": "【已完赛】🇳🇱荷兰 (5:1) 瑞典🇸🇪"
     }
 }
