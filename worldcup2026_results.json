@@ -370,5 +370,17 @@
         "city": "费城",
         "stage": "小组赛 (C组)",
         "summary": "【已完赛】🏴󠁧󠁢󠁳󠁣󠁴󠁿苏格兰 (0:1) 摩洛哥🇲🇦"
+    },
+    "32": {
+        "finished": true,
+        "home_team": "土耳其",
+        "home_score": "0",
+        "away_score": "1",
+        "away_team": "巴拉圭",
+        "local_date": "06/19/2026 20:00",
+        "stadium": "李维斯球场 (Levi's Stadium, 圣克拉拉/旧金山湾区)",
+        "city": "旧金山湾区 (圣克拉拉)",
+        "stage": "小组赛 (D组)",
+        "summary": "【已完赛】🇹🇷土耳其 (0:1) 巴拉圭🇵🇾"
     }
 }
