@@ -394,5 +394,17 @@
         "city": "休斯敦",
         "stage": "小组赛 (F组)",
         "summary": "【已完赛】🇳🇱荷兰 (5:1) 瑞典🇸🇪"
+    },
+    "33": {
+        "finished": true,
+        "home_team": "德国",
+        "home_score": "2",
+        "away_score": "1",
+        "away_team": "科特迪瓦",
+        "local_date": "06/20/2026 16:00",
+        "stadium": "BMO 球场 (BMO Field, 多伦多)",
+        "city": "多伦多",
+        "stage": "小组赛 (E组)",
+        "summary": "【已完赛】🇩🇪德国 (2:1) 科特迪瓦🇨🇮"
     }
 }
