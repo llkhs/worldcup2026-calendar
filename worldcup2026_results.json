@@ -406,5 +406,29 @@
         "city": "多伦多",
         "stage": "小组赛 (E组)",
         "summary": "【已完赛】🇩🇪德国 (2:1) 科特迪瓦🇨🇮"
+    },
+    "34": {
+        "finished": true,
+        "home_team": "厄瓜多尔",
+        "home_score": "0",
+        "away_score": "0",
+        "away_team": "库拉索",
+        "local_date": "06/20/2026 19:00",
+        "stadium": "箭头体育场 (Arrowhead Stadium, 堪萨斯城)",
+        "city": "堪萨斯城",
+        "stage": "小组赛 (E组)",
+        "summary": "【已完赛】🇪🇨厄瓜多尔 (0:0) 库拉索🇨🇼"
+    },
+    "36": {
+        "finished": true,
+        "home_team": "突尼斯",
+        "home_score": "0",
+        "away_score": "4",
+        "away_team": "日本",
+        "local_date": "06/20/2026 22:00",
+        "stadium": "BBVA 体育场 (Estadio BBVA)",
+        "city": "蒙特雷",
+        "stage": "小组赛 (F组)",
+        "summary": "【已完赛】🇹🇳突尼斯 (0:4) 日本🇯🇵"
     }
 }
