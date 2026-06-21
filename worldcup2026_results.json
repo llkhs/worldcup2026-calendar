@@ -430,5 +430,29 @@
         "city": "蒙特雷",
         "stage": "小组赛 (F组)",
         "summary": "【已完赛】🇹🇳突尼斯 (0:4) 日本🇯🇵"
+    },
+    "37": {
+        "finished": true,
+        "home_team": "比利时",
+        "home_score": "0",
+        "away_score": "0",
+        "away_team": "伊朗",
+        "local_date": "06/21/2026 12:00",
+        "stadium": "卢门球场 (Lumen Field, 西雅图)",
+        "city": "西雅图",
+        "stage": "小组赛 (G组)",
+        "summary": "【已完赛】🇧🇪比利时 (0:0) 伊朗🇮🇷"
+    },
+    "39": {
+        "finished": true,
+        "home_team": "西班牙",
+        "home_score": "4",
+        "away_score": "0",
+        "away_team": "沙特",
+        "local_date": "06/21/2026 12:00",
+        "stadium": "梅赛德斯·奔驰体育场 (Mercedes‑Benz Stadium, 亚特兰大)",
+        "city": "亚特兰大",
+        "stage": "小组赛 (H组)",
+        "summary": "【已完赛】🇪🇸西班牙 (4:0) 沙特🇸🇦"
     }
 }
