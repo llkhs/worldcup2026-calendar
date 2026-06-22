@@ -454,5 +454,29 @@
         "city": "亚特兰大",
         "stage": "小组赛 (H组)",
         "summary": "【已完赛】🇪🇸西班牙 (4:0) 沙特🇸🇦"
+    },
+    "38": {
+        "finished": true,
+        "home_team": "新西兰",
+        "home_score": "1",
+        "away_score": "3",
+        "away_team": "埃及",
+        "local_date": "06/21/2026 18:00",
+        "stadium": "BC 广场体育场 (BC Place, 温哥华)",
+        "city": "温哥华",
+        "stage": "小组赛 (G组)",
+        "summary": "【已完赛】🇳🇿新西兰 (1:3) 埃及🇪🇬"
+    },
+    "40": {
+        "finished": true,
+        "home_team": "乌拉圭",
+        "home_score": "2",
+        "away_score": "2",
+        "away_team": "佛得角",
+        "local_date": "06/21/2026 18:00",
+        "stadium": "吉列体育场 (Gillette Stadium, 新英格兰/波士顿)",
+        "city": "波士顿 (福克斯堡)",
+        "stage": "小组赛 (H组)",
+        "summary": "【已完赛】🇺🇾乌拉圭 (2:2) 佛得角🇨🇻"
     }
 }
