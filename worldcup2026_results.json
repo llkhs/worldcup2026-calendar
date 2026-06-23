@@ -538,5 +538,17 @@
         "city": "休斯敦",
         "stage": "小组赛 (K组)",
         "summary": "【已完赛】🇵🇹葡萄牙 (5:0) 乌兹别克斯坦🇺🇿"
+    },
+    "48": {
+        "finished": true,
+        "home_team": "英格兰",
+        "home_score": "0",
+        "away_score": "0",
+        "away_team": "加纳",
+        "local_date": "06/23/2026 16:00",
+        "stadium": "林肯金融球场 (Lincoln Financial Field, 费城)",
+        "city": "费城",
+        "stage": "小组赛 (L组)",
+        "summary": "【已完赛】🏴󠁧󠁢󠁥󠁮󠁧󠁿英格兰 (0:0) 加纳🇬🇭"
     }
 }
