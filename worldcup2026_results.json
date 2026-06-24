@@ -550,5 +550,29 @@
         "city": "费城",
         "stage": "小组赛 (L组)",
         "summary": "【已完赛】🏴󠁧󠁢󠁥󠁮󠁧󠁿英格兰 (0:0) 加纳🇬🇭"
+    },
+    "46": {
+        "finished": true,
+        "home_team": "巴拿马",
+        "home_score": "0",
+        "away_score": "1",
+        "away_team": "克罗地亚",
+        "local_date": "06/23/2026 19:00",
+        "stadium": "BMO 球场 (BMO Field, 多伦多)",
+        "city": "多伦多",
+        "stage": "小组赛 (L组)",
+        "summary": "【已完赛】🇵🇦巴拿马 (0:1) 克罗地亚🇭🇷"
+    },
+    "47": {
+        "finished": true,
+        "home_team": "哥伦比亚",
+        "home_score": "1",
+        "away_score": "0",
+        "away_team": "民主刚果",
+        "local_date": "06/23/2026 20:00",
+        "stadium": "阿克伦体育场 (Estadio Akron)",
+        "city": "瓜达拉哈拉",
+        "stage": "小组赛 (K组)",
+        "summary": "【已完赛】🇨🇴哥伦比亚 (1:0) 民主刚果🇨🇩"
     }
 }
