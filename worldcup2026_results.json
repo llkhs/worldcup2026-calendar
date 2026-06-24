@@ -574,5 +574,29 @@
         "city": "瓜达拉哈拉",
         "stage": "小组赛 (K组)",
         "summary": "【已完赛】🇨🇴哥伦比亚 (1:0) 民主刚果🇨🇩"
+    },
+    "53": {
+        "finished": true,
+        "home_team": "波黑",
+        "home_score": "3",
+        "away_score": "1",
+        "away_team": "卡塔尔",
+        "local_date": "06/24/2026 12:00",
+        "stadium": "SoFi 体育场 (SoFi Stadium, 因格尔伍德/洛杉矶)",
+        "city": "洛杉矶 (因格尔伍德)",
+        "stage": "小组赛 (B组)",
+        "summary": "【已完赛】🇧🇦波黑 (3:1) 卡塔尔🇶🇦"
+    },
+    "54": {
+        "finished": true,
+        "home_team": "瑞士",
+        "home_score": "2",
+        "away_score": "1",
+        "away_team": "加拿大",
+        "local_date": "06/24/2026 12:00",
+        "stadium": "BC 广场体育场 (BC Place, 温哥华)",
+        "city": "温哥华",
+        "stage": "小组赛 (B组)",
+        "summary": "【已完赛】🇨🇭瑞士 (2:1) 加拿大🇨🇦"
     }
 }
