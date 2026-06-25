@@ -598,5 +598,53 @@
         "city": "温哥华",
         "stage": "小组赛 (B组)",
         "summary": "【已完赛】🇨🇭瑞士 (2:1) 加拿大🇨🇦"
+    },
+    "52": {
+        "finished": true,
+        "home_team": "捷克",
+        "home_score": "0",
+        "away_score": "3",
+        "away_team": "墨西哥",
+        "local_date": "06/24/2026 19:00",
+        "stadium": "阿兹特克体育场 (Estadio Azteca)",
+        "city": "墨西哥城",
+        "stage": "小组赛 (A组)",
+        "summary": "【已完赛】🇨🇿捷克 (0:3) 墨西哥🇲🇽"
+    },
+    "50": {
+        "finished": true,
+        "home_team": "摩洛哥",
+        "home_score": "4",
+        "away_score": "2",
+        "away_team": "海地",
+        "local_date": "06/24/2026 18:00",
+        "stadium": "梅赛德斯·奔驰体育场 (Mercedes‑Benz Stadium, 亚特兰大)",
+        "city": "亚特兰大",
+        "stage": "小组赛 (C组)",
+        "summary": "【已完赛】🇲🇦摩洛哥 (4:2) 海地🇭🇹"
+    },
+    "51": {
+        "finished": true,
+        "home_team": "南非",
+        "home_score": "1",
+        "away_score": "0",
+        "away_team": "韩国",
+        "local_date": "06/24/2026 19:00",
+        "stadium": "BBVA 体育场 (Estadio BBVA)",
+        "city": "蒙特雷",
+        "stage": "小组赛 (A组)",
+        "summary": "【已完赛】🇿🇦南非 (1:0) 韩国🇰🇷"
+    },
+    "49": {
+        "finished": true,
+        "home_team": "苏格兰",
+        "home_score": "0",
+        "away_score": "3",
+        "away_team": "巴西",
+        "local_date": "06/24/2026 18:00",
+        "stadium": "吉列体育场 (Gillette Stadium, 新英格兰/波士顿)",
+        "city": "波士顿 (福克斯堡)",
+        "stage": "小组赛 (C组)",
+        "summary": "【已完赛】🏴󠁧󠁢󠁳󠁣󠁴󠁿苏格兰 (0:3) 巴西🇧🇷"
     }
 }
