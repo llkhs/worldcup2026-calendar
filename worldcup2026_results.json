@@ -646,5 +646,29 @@
         "city": "波士顿 (福克斯堡)",
         "stage": "小组赛 (C组)",
         "summary": "【已完赛】🏴󠁧󠁢󠁳󠁣󠁴󠁿苏格兰 (0:3) 巴西🇧🇷"
+    },
+    "55": {
+        "finished": true,
+        "home_team": "库拉索",
+        "home_score": "0",
+        "away_score": "2",
+        "away_team": "科特迪瓦",
+        "local_date": "06/25/2026 16:00",
+        "stadium": "硬石体育场 (Hard Rock Stadium, 迈阿密)",
+        "city": "迈阿密",
+        "stage": "小组赛 (E组)",
+        "summary": "【已完赛】🇨🇼库拉索 (0:2) 科特迪瓦🇨🇮"
+    },
+    "56": {
+        "finished": true,
+        "home_team": "厄瓜多尔",
+        "home_score": "2",
+        "away_score": "1",
+        "away_team": "德国",
+        "local_date": "06/25/2026 16:00",
+        "stadium": "大都会人寿体育场 (MetLife Stadium, 纽泽西/纽约都会区)",
+        "city": "纽约/新泽西",
+        "stage": "小组赛 (E组)",
+        "summary": "【已完赛】🇪🇨厄瓜多尔 (2:1) 德国🇩🇪"
     }
 }
