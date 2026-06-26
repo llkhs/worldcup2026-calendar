@@ -718,5 +718,29 @@
         "city": "旧金山湾区 (圣克拉拉)",
         "stage": "小组赛 (D组)",
         "summary": "【已完赛】🇵🇾巴拉圭 (0:0) 澳大利亚🇦🇺"
+    },
+    "61": {
+        "finished": true,
+        "home_team": "塞内加尔",
+        "home_score": "5",
+        "away_score": "0",
+        "away_team": "伊拉克",
+        "local_date": "06/26/2026 15:00",
+        "stadium": "BMO 球场 (BMO Field, 多伦多)",
+        "city": "多伦多",
+        "stage": "小组赛 (I组)",
+        "summary": "【已完赛】🇸🇳塞内加尔 (5:0) 伊拉克🇮🇶"
+    },
+    "62": {
+        "finished": true,
+        "home_team": "挪威",
+        "home_score": "1",
+        "away_score": "4",
+        "away_team": "法国",
+        "local_date": "06/26/2026 15:00",
+        "stadium": "林肯金融球场 (Lincoln Financial Field, 费城)",
+        "city": "费城",
+        "stage": "小组赛 (I组)",
+        "summary": "【已完赛】🇳🇴挪威 (1:4) 法国🇫🇷"
     }
 }
