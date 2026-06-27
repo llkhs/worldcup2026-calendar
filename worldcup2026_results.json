@@ -742,5 +742,53 @@
         "city": "费城",
         "stage": "小组赛 (I组)",
         "summary": "【已完赛】🇳🇴挪威 (1:4) 法国🇫🇷"
+    },
+    "63": {
+        "finished": true,
+        "home_team": "埃及",
+        "home_score": "1",
+        "away_score": "1",
+        "away_team": "伊朗",
+        "local_date": "06/26/2026 20:00",
+        "stadium": "SoFi 体育场 (SoFi Stadium, 因格尔伍德/洛杉矶)",
+        "city": "洛杉矶 (因格尔伍德)",
+        "stage": "小组赛 (G组)",
+        "summary": "【已完赛】🇪🇬埃及 (1:1) 伊朗🇮🇷"
+    },
+    "65": {
+        "finished": true,
+        "home_team": "佛得角",
+        "home_score": "0",
+        "away_score": "0",
+        "away_team": "沙特",
+        "local_date": "06/26/2026 19:00",
+        "stadium": "NRG 体育场 (NRG Stadium, 休斯敦)",
+        "city": "休斯敦",
+        "stage": "小组赛 (H组)",
+        "summary": "【已完赛】🇨🇻佛得角 (0:0) 沙特🇸🇦"
+    },
+    "66": {
+        "finished": true,
+        "home_team": "乌拉圭",
+        "home_score": "0",
+        "away_score": "1",
+        "away_team": "西班牙",
+        "local_date": "06/26/2026 18:00",
+        "stadium": "阿克伦体育场 (Estadio Akron)",
+        "city": "瓜达拉哈拉",
+        "stage": "小组赛 (H组)",
+        "summary": "【已完赛】🇺🇾乌拉圭 (0:1) 西班牙🇪🇸"
+    },
+    "64": {
+        "finished": true,
+        "home_team": "新西兰",
+        "home_score": "1",
+        "away_score": "5",
+        "away_team": "比利时",
+        "local_date": "06/26/2026 20:00",
+        "stadium": "BC 广场体育场 (BC Place, 温哥华)",
+        "city": "温哥华",
+        "stage": "小组赛 (G组)",
+        "summary": "【已完赛】🇳🇿新西兰 (1:5) 比利时🇧🇪"
     }
 }
