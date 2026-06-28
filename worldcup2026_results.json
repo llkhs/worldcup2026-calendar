@@ -790,5 +790,29 @@
         "city": "温哥华",
         "stage": "小组赛 (G组)",
         "summary": "【已完赛】🇳🇿新西兰 (1:5) 比利时🇧🇪"
+    },
+    "67": {
+        "finished": true,
+        "home_team": "巴拿马",
+        "home_score": "0",
+        "away_score": "2",
+        "away_team": "英格兰",
+        "local_date": "06/27/2026 17:00",
+        "stadium": "大都会人寿体育场 (MetLife Stadium, 纽泽西/纽约都会区)",
+        "city": "纽约/新泽西",
+        "stage": "小组赛 (L组)",
+        "summary": "【已完赛】🇵🇦巴拿马 (0:2) 英格兰🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+    },
+    "68": {
+        "finished": true,
+        "home_team": "克罗地亚",
+        "home_score": "2",
+        "away_score": "1",
+        "away_team": "加纳",
+        "local_date": "06/27/2026 17:00",
+        "stadium": "硬石体育场 (Hard Rock Stadium, 迈阿密)",
+        "city": "迈阿密",
+        "stage": "小组赛 (L组)",
+        "summary": "【已完赛】🇭🇷克罗地亚 (2:1) 加纳🇬🇭"
     }
 }
