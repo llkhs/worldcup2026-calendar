@@ -862,5 +862,17 @@
         "city": "堪萨斯城",
         "stage": "小组赛 (J组)",
         "summary": "【已完赛】🇩🇿阿尔及利亚 (3:3) 奥地利🇦🇹"
+    },
+    "73": {
+        "finished": true,
+        "home_team": "南非",
+        "home_score": "0",
+        "away_score": "1",
+        "away_team": "加拿大",
+        "local_date": "06/28/2026 12:00",
+        "stadium": "卢门球场 (Lumen Field, 西雅图)",
+        "city": "西雅图",
+        "stage": "小组赛 (R32组)",
+        "summary": "【已完赛】🇿🇦南非 (0:1) 加拿大🇨🇦"
     }
 }
