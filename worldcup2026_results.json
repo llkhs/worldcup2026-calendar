@@ -874,5 +874,17 @@
         "city": "西雅图",
         "stage": "小组赛 (R32组)",
         "summary": "【已完赛】🇿🇦南非 (0:1) 加拿大🇨🇦"
+    },
+    "76": {
+        "finished": true,
+        "home_team": "巴西",
+        "home_score": "2",
+        "away_score": "1",
+        "away_team": "日本",
+        "local_date": "06/29/2026 12:00",
+        "stadium": "NRG 体育场 (NRG Stadium, 休斯敦)",
+        "city": "休斯敦",
+        "stage": "小组赛 (R32组)",
+        "summary": "【已完赛】🇧🇷巴西 (2:1) 日本🇯🇵"
     }
 }
