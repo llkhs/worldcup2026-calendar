@@ -886,5 +886,17 @@
         "city": "休斯敦",
         "stage": "小组赛 (R32组)",
         "summary": "【已完赛】🇧🇷巴西 (2:1) 日本🇯🇵"
+    },
+    "74": {
+        "finished": true,
+        "home_team": "德国",
+        "home_score": "1",
+        "away_score": "1",
+        "away_team": "巴拉圭",
+        "local_date": "06/29/2026 16:30",
+        "stadium": "林肯金融球场 (Lincoln Financial Field, 费城)",
+        "city": "费城",
+        "stage": "小组赛 (R32组)",
+        "summary": "【已完赛】🇩🇪德国 (1:1) 巴拉圭🇵🇾"
     }
 }
