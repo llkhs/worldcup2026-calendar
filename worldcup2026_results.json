@@ -910,5 +910,17 @@
         "city": "蒙特雷",
         "stage": "小组赛 (R32组)",
         "summary": "【已完赛】🇳🇱荷兰 (1:1) 摩洛哥🇲🇦"
+    },
+    "78": {
+        "finished": true,
+        "home_team": "科特迪瓦",
+        "home_score": "1",
+        "away_score": "2",
+        "away_team": "挪威",
+        "local_date": "06/30/2026 12:00",
+        "stadium": "AT&T 体育场 (AT&T Stadium, 阿灵顿/达拉斯)",
+        "city": "达拉斯 (阿灵顿)",
+        "stage": "小组赛 (R32组)",
+        "summary": "【已完赛】🇨🇮科特迪瓦 (1:2) 挪威🇳🇴"
     }
 }
