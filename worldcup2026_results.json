@@ -898,5 +898,17 @@
         "city": "费城",
         "stage": "小组赛 (R32组)",
         "summary": "【已完赛】🇩🇪德国 (1:1) 巴拉圭🇵🇾"
+    },
+    "75": {
+        "finished": true,
+        "home_team": "荷兰",
+        "home_score": "1",
+        "away_score": "1",
+        "away_team": "摩洛哥",
+        "local_date": "06/29/2026 19:00",
+        "stadium": "BBVA 体育场 (Estadio BBVA)",
+        "city": "蒙特雷",
+        "stage": "小组赛 (R32组)",
+        "summary": "【已完赛】🇳🇱荷兰 (1:1) 摩洛哥🇲🇦"
     }
 }
