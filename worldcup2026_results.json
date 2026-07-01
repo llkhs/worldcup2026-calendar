@@ -946,5 +946,17 @@
         "city": "墨西哥城",
         "stage": "小组赛 (R32组)",
         "summary": "【已完赛】🇲🇽墨西哥 (2:0) 厄瓜多尔🇪🇨"
+    },
+    "80": {
+        "finished": true,
+        "home_team": "英格兰",
+        "home_score": "2",
+        "away_score": "1",
+        "away_team": "民主刚果",
+        "local_date": "07/01/2026 12:00",
+        "stadium": "梅赛德斯·奔驰体育场 (Mercedes‑Benz Stadium, 亚特兰大)",
+        "city": "亚特兰大",
+        "stage": "小组赛 (R32组)",
+        "summary": "【已完赛】🏴󠁧󠁢󠁥󠁮󠁧󠁿英格兰 (2:1) 民主刚果🇨🇩"
     }
 }
