@@ -922,5 +922,17 @@
         "city": "达拉斯 (阿灵顿)",
         "stage": "小组赛 (R32组)",
         "summary": "【已完赛】🇨🇮科特迪瓦 (1:2) 挪威🇳🇴"
+    },
+    "77": {
+        "finished": true,
+        "home_team": "法国",
+        "home_score": "3",
+        "away_score": "0",
+        "away_team": "瑞典",
+        "local_date": "06/30/2026 17:00",
+        "stadium": "大都会人寿体育场 (MetLife Stadium, 纽泽西/纽约都会区)",
+        "city": "纽约/新泽西",
+        "stage": "小组赛 (R32组)",
+        "summary": "【已完赛】🇫🇷法国 (3:0) 瑞典🇸🇪"
     }
 }
