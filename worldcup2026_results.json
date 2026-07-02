@@ -970,5 +970,17 @@
         "city": "洛杉矶 (因格尔伍德)",
         "stage": "小组赛 (R32组)",
         "summary": "【已完赛】🇧🇪比利时 (3:2) 塞内加尔🇸🇳"
+    },
+    "81": {
+        "finished": true,
+        "home_team": "美国",
+        "home_score": "2",
+        "away_score": "0",
+        "away_team": "波黑",
+        "local_date": "07/01/2026 17:00",
+        "stadium": "李维斯球场 (Levi's Stadium, 圣克拉拉/旧金山湾区)",
+        "city": "旧金山湾区 (圣克拉拉)",
+        "stage": "小组赛 (R32组)",
+        "summary": "【已完赛】🇺🇸美国 (2:0) 波黑🇧🇦"
     }
 }
