@@ -982,5 +982,17 @@
         "city": "旧金山湾区 (圣克拉拉)",
         "stage": "小组赛 (R32组)",
         "summary": "【已完赛】🇺🇸美国 (2:0) 波黑🇧🇦"
+    },
+    "84": {
+        "finished": true,
+        "home_team": "西班牙",
+        "home_score": "3",
+        "away_score": "0",
+        "away_team": "奥地利",
+        "local_date": "07/02/2026 12:00",
+        "stadium": "卢门球场 (Lumen Field, 西雅图)",
+        "city": "西雅图",
+        "stage": "小组赛 (R32组)",
+        "summary": "【已完赛】🇪🇸西班牙 (3:0) 奥地利🇦🇹"
     }
 }
