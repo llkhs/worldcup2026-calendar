@@ -958,5 +958,17 @@
         "city": "亚特兰大",
         "stage": "小组赛 (R32组)",
         "summary": "【已完赛】🏴󠁧󠁢󠁥󠁮󠁧󠁿英格兰 (2:1) 民主刚果🇨🇩"
+    },
+    "82": {
+        "finished": true,
+        "home_team": "比利时",
+        "home_score": "3",
+        "away_score": "2",
+        "away_team": "塞内加尔",
+        "local_date": "07/01/2026 13:00",
+        "stadium": "SoFi 体育场 (SoFi Stadium, 因格尔伍德/洛杉矶)",
+        "city": "洛杉矶 (因格尔伍德)",
+        "stage": "小组赛 (R32组)",
+        "summary": "【已完赛】🇧🇪比利时 (3:2) 塞内加尔🇸🇳"
     }
 }
