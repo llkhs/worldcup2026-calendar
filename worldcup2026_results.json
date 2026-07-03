@@ -1018,5 +1018,17 @@
         "city": "温哥华",
         "stage": "小组赛 (R32组)",
         "summary": "【已完赛】🇨🇭瑞士 (2:0) 阿尔及利亚🇩🇿"
+    },
+    "88": {
+        "finished": true,
+        "home_team": "澳大利亚",
+        "home_score": "1",
+        "away_score": "1",
+        "away_team": "埃及",
+        "local_date": "07/03/2026 13:00",
+        "stadium": "AT&T 体育场 (AT&T Stadium, 阿灵顿/达拉斯)",
+        "city": "达拉斯 (阿灵顿)",
+        "stage": "小组赛 (R32组)",
+        "summary": "【已完赛】🇦🇺澳大利亚 (1:1) 埃及🇪🇬"
     }
 }
