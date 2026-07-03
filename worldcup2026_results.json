@@ -994,5 +994,17 @@
         "city": "西雅图",
         "stage": "小组赛 (R32组)",
         "summary": "【已完赛】🇪🇸西班牙 (3:0) 奥地利🇦🇹"
+    },
+    "83": {
+        "finished": true,
+        "home_team": "葡萄牙",
+        "home_score": "2",
+        "away_score": "1",
+        "away_team": "克罗地亚",
+        "local_date": "07/02/2026 19:00",
+        "stadium": "BMO 球场 (BMO Field, 多伦多)",
+        "city": "多伦多",
+        "stage": "小组赛 (R32组)",
+        "summary": "【已完赛】🇵🇹葡萄牙 (2:1) 克罗地亚🇭🇷"
     }
 }
