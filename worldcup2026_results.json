@@ -1006,5 +1006,17 @@
         "city": "多伦多",
         "stage": "小组赛 (R32组)",
         "summary": "【已完赛】🇵🇹葡萄牙 (2:1) 克罗地亚🇭🇷"
+    },
+    "85": {
+        "finished": true,
+        "home_team": "瑞士",
+        "home_score": "2",
+        "away_score": "0",
+        "away_team": "阿尔及利亚",
+        "local_date": "07/02/2026 20:00",
+        "stadium": "BC 广场体育场 (BC Place, 温哥华)",
+        "city": "温哥华",
+        "stage": "小组赛 (R32组)",
+        "summary": "【已完赛】🇨🇭瑞士 (2:0) 阿尔及利亚🇩🇿"
     }
 }
