@@ -1030,5 +1030,29 @@
         "city": "达拉斯 (阿灵顿)",
         "stage": "小组赛 (R32组)",
         "summary": "【已完赛】🇦🇺澳大利亚 (1:1) 埃及🇪🇬"
+    },
+    "86": {
+        "finished": true,
+        "home_team": "阿根廷",
+        "home_score": "3",
+        "away_score": "2",
+        "away_team": "佛得角",
+        "local_date": "07/03/2026 18:00",
+        "stadium": "吉列体育场 (Gillette Stadium, 新英格兰/波士顿)",
+        "city": "波士顿 (福克斯堡)",
+        "stage": "小组赛 (R32组)",
+        "summary": "【已完赛】🇦🇷阿根廷 (3:2) 佛得角🇨🇻"
+    },
+    "87": {
+        "finished": true,
+        "home_team": "哥伦比亚",
+        "home_score": "1",
+        "away_score": "0",
+        "away_team": "加纳",
+        "local_date": "07/03/2026 20:30",
+        "stadium": "箭头体育场 (Arrowhead Stadium, 堪萨斯城)",
+        "city": "堪萨斯城",
+        "stage": "小组赛 (R32组)",
+        "summary": "【已完赛】🇨🇴哥伦比亚 (1:0) 加纳🇬🇭"
     }
 }
