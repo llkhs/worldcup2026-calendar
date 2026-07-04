@@ -1066,5 +1066,17 @@
         "city": "休斯敦",
         "stage": "小组赛 (R16组)",
         "summary": "【已完赛】🇨🇦加拿大 (0:3) 摩洛哥🇲🇦"
+    },
+    "89": {
+        "finished": true,
+        "home_team": "巴拉圭",
+        "home_score": "0",
+        "away_score": "1",
+        "away_team": "法国",
+        "local_date": "07/04/2026 17:00",
+        "stadium": "硬石体育场 (Hard Rock Stadium, 迈阿密)",
+        "city": "迈阿密",
+        "stage": "小组赛 (R16组)",
+        "summary": "【已完赛】🇵🇾巴拉圭 (0:1) 法国🇫🇷"
     }
 }
