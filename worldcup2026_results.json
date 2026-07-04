@@ -1054,5 +1054,17 @@
         "city": "堪萨斯城",
         "stage": "小组赛 (R32组)",
         "summary": "【已完赛】🇨🇴哥伦比亚 (1:0) 加纳🇬🇭"
+    },
+    "90": {
+        "finished": true,
+        "home_team": "加拿大",
+        "home_score": "0",
+        "away_score": "3",
+        "away_team": "摩洛哥",
+        "local_date": "07/04/2026 12:00",
+        "stadium": "NRG 体育场 (NRG Stadium, 休斯敦)",
+        "city": "休斯敦",
+        "stage": "小组赛 (R16组)",
+        "summary": "【已完赛】🇨🇦加拿大 (0:3) 摩洛哥🇲🇦"
     }
 }
