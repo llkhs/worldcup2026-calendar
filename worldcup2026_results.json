@@ -1078,5 +1078,17 @@
         "city": "迈阿密",
         "stage": "小组赛 (R16组)",
         "summary": "【已完赛】🇵🇾巴拉圭 (0:1) 法国🇫🇷"
+    },
+    "91": {
+        "finished": true,
+        "home_team": "巴西",
+        "home_score": "1",
+        "away_score": "2",
+        "away_team": "挪威",
+        "local_date": "07/05/2026 16:00",
+        "stadium": "大都会人寿体育场 (MetLife Stadium, 纽泽西/纽约都会区)",
+        "city": "纽约/新泽西",
+        "stage": "小组赛 (R16组)",
+        "summary": "【已完赛】🇧🇷巴西 (1:2) 挪威🇳🇴"
     }
 }
