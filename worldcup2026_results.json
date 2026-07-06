@@ -1090,5 +1090,17 @@
         "city": "纽约/新泽西",
         "stage": "小组赛 (R16组)",
         "summary": "【已完赛】🇧🇷巴西 (1:2) 挪威🇳🇴"
+    },
+    "92": {
+        "finished": true,
+        "home_team": "墨西哥",
+        "home_score": "2",
+        "away_score": "3",
+        "away_team": "英格兰",
+        "local_date": "07/05/2026 18:00",
+        "stadium": "阿兹特克体育场 (Estadio Azteca)",
+        "city": "墨西哥城",
+        "stage": "小组赛 (R16组)",
+        "summary": "【已完赛】🇲🇽墨西哥 (2:3) 英格兰🏴󠁧󠁢󠁥󠁮󠁧󠁿"
     }
 }
