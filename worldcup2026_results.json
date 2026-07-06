@@ -1102,5 +1102,17 @@
         "city": "墨西哥城",
         "stage": "小组赛 (R16组)",
         "summary": "【已完赛】🇲🇽墨西哥 (2:3) 英格兰🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+    },
+    "93": {
+        "finished": true,
+        "home_team": "葡萄牙",
+        "home_score": "0",
+        "away_score": "1",
+        "away_team": "西班牙",
+        "local_date": "07/06/2026 14:00",
+        "stadium": "AT&T 体育场 (AT&T Stadium, 阿灵顿/达拉斯)",
+        "city": "达拉斯 (阿灵顿)",
+        "stage": "小组赛 (R16组)",
+        "summary": "【已完赛】🇵🇹葡萄牙 (0:1) 西班牙🇪🇸"
     }
 }
