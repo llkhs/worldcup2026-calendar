@@ -1138,5 +1138,17 @@
         "city": "亚特兰大",
         "stage": "小组赛 (R16组)",
         "summary": "【已完赛】🇦🇷阿根廷 (3:2) 埃及🇪🇬"
+    },
+    "96": {
+        "finished": true,
+        "home_team": "瑞士",
+        "home_score": "0",
+        "away_score": "0",
+        "away_team": "哥伦比亚",
+        "local_date": "07/07/2026 13:00",
+        "stadium": "BC 广场体育场 (BC Place, 温哥华)",
+        "city": "温哥华",
+        "stage": "小组赛 (R16组)",
+        "summary": "【已完赛】🇨🇭瑞士 (0:0) 哥伦比亚🇨🇴"
     }
 }
