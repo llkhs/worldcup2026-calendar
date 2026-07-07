@@ -1126,5 +1126,17 @@
         "city": "洛杉矶 (因格尔伍德)",
         "stage": "小组赛 (R16组)",
         "summary": "【已完赛】🇺🇸美国 (1:4) 比利时🇧🇪"
+    },
+    "95": {
+        "finished": true,
+        "home_team": "阿根廷",
+        "home_score": "3",
+        "away_score": "2",
+        "away_team": "埃及",
+        "local_date": "07/07/2026 12:00",
+        "stadium": "梅赛德斯·奔驰体育场 (Mercedes‑Benz Stadium, 亚特兰大)",
+        "city": "亚特兰大",
+        "stage": "小组赛 (R16组)",
+        "summary": "【已完赛】🇦🇷阿根廷 (3:2) 埃及🇪🇬"
     }
 }
