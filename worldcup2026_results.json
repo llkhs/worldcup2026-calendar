@@ -1114,5 +1114,17 @@
         "city": "达拉斯 (阿灵顿)",
         "stage": "小组赛 (R16组)",
         "summary": "【已完赛】🇵🇹葡萄牙 (0:1) 西班牙🇪🇸"
+    },
+    "94": {
+        "finished": true,
+        "home_team": "美国",
+        "home_score": "1",
+        "away_score": "4",
+        "away_team": "比利时",
+        "local_date": "07/06/2026 17:00",
+        "stadium": "SoFi 体育场 (SoFi Stadium, 因格尔伍德/洛杉矶)",
+        "city": "洛杉矶 (因格尔伍德)",
+        "stage": "小组赛 (R16组)",
+        "summary": "【已完赛】🇺🇸美国 (1:4) 比利时🇧🇪"
     }
 }
