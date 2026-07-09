@@ -1150,5 +1150,17 @@
         "city": "温哥华",
         "stage": "小组赛 (R16组)",
         "summary": "【已完赛】🇨🇭瑞士 (0:0) 哥伦比亚🇨🇴"
+    },
+    "97": {
+        "finished": true,
+        "home_team": "法国",
+        "home_score": "2",
+        "away_score": "0",
+        "away_team": "摩洛哥",
+        "local_date": "07/09/2026 16:00",
+        "stadium": "林肯金融球场 (Lincoln Financial Field, 费城)",
+        "city": "费城",
+        "stage": "小组赛 (QF组)",
+        "summary": "【已完赛】🇫🇷法国 (2:0) 摩洛哥🇲🇦"
     }
 }
