@@ -1162,5 +1162,17 @@
         "city": "费城",
         "stage": "小组赛 (QF组)",
         "summary": "【已完赛】🇫🇷法国 (2:0) 摩洛哥🇲🇦"
+    },
+    "98": {
+        "finished": true,
+        "home_team": "西班牙",
+        "home_score": "2",
+        "away_score": "1",
+        "away_team": "比利时",
+        "local_date": "07/10/2026 12:00",
+        "stadium": "卢门球场 (Lumen Field, 西雅图)",
+        "city": "西雅图",
+        "stage": "小组赛 (QF组)",
+        "summary": "【已完赛】🇪🇸西班牙 (2:1) 比利时🇧🇪"
     }
 }
