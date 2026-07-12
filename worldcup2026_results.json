@@ -1174,5 +1174,17 @@
         "city": "西雅图",
         "stage": "小组赛 (QF组)",
         "summary": "【已完赛】🇪🇸西班牙 (2:1) 比利时🇧🇪"
+    },
+    "99": {
+        "finished": true,
+        "home_team": "挪威",
+        "home_score": "1",
+        "away_score": "2",
+        "away_team": "英格兰",
+        "local_date": "07/11/2026 17:00",
+        "stadium": "吉列体育场 (Gillette Stadium, 新英格兰/波士顿)",
+        "city": "波士顿 (福克斯堡)",
+        "stage": "小组赛 (QF组)",
+        "summary": "【已完赛】🇳🇴挪威 (1:2) 英格兰🏴󠁧󠁢󠁥󠁮󠁧󠁿"
     }
 }
