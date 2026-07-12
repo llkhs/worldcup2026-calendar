@@ -1186,5 +1186,17 @@
         "city": "波士顿 (福克斯堡)",
         "stage": "小组赛 (QF组)",
         "summary": "【已完赛】🇳🇴挪威 (1:2) 英格兰🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+    },
+    "100": {
+        "finished": true,
+        "home_team": "阿根廷",
+        "home_score": "3",
+        "away_score": "1",
+        "away_team": "瑞士",
+        "local_date": "07/11/2026 20:00",
+        "stadium": "箭头体育场 (Arrowhead Stadium, 堪萨斯城)",
+        "city": "堪萨斯城",
+        "stage": "小组赛 (QF组)",
+        "summary": "【已完赛】🇦🇷阿根廷 (3:1) 瑞士🇨🇭"
     }
 }
