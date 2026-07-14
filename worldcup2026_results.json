@@ -1198,5 +1198,17 @@
         "city": "堪萨斯城",
         "stage": "小组赛 (QF组)",
         "summary": "【已完赛】🇦🇷阿根廷 (3:1) 瑞士🇨🇭"
+    },
+    "101": {
+        "finished": true,
+        "home_team": "法国",
+        "home_score": "0",
+        "away_score": "2",
+        "away_team": "西班牙",
+        "local_date": "07/14/2026 14:00",
+        "stadium": "AT&T 体育场 (AT&T Stadium, 阿灵顿/达拉斯)",
+        "city": "达拉斯 (阿灵顿)",
+        "stage": "小组赛 (SF组)",
+        "summary": "【已完赛】🇫🇷法国 (0:2) 西班牙🇪🇸"
     }
 }
