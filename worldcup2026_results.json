@@ -1210,5 +1210,17 @@
         "city": "达拉斯 (阿灵顿)",
         "stage": "小组赛 (SF组)",
         "summary": "【已完赛】🇫🇷法国 (0:2) 西班牙🇪🇸"
+    },
+    "102": {
+        "finished": true,
+        "home_team": "英格兰",
+        "home_score": "1",
+        "away_score": "2",
+        "away_team": "阿根廷",
+        "local_date": "07/15/2026 15:00",
+        "stadium": "梅赛德斯·奔驰体育场 (Mercedes‑Benz Stadium, 亚特兰大)",
+        "city": "亚特兰大",
+        "stage": "小组赛 (SF组)",
+        "summary": "【已完赛】🏴󠁧󠁢󠁥󠁮󠁧󠁿英格兰 (1:2) 阿根廷🇦🇷"
     }
 }
