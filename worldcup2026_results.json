@@ -1222,5 +1222,17 @@
         "city": "亚特兰大",
         "stage": "小组赛 (SF组)",
         "summary": "【已完赛】🏴󠁧󠁢󠁥󠁮󠁧󠁿英格兰 (1:2) 阿根廷🇦🇷"
+    },
+    "103": {
+        "finished": true,
+        "home_team": "法国",
+        "home_score": "4",
+        "away_score": "6",
+        "away_team": "英格兰",
+        "local_date": "07/18/2026 17:00",
+        "stadium": "吉列体育场 (Gillette Stadium, 新英格兰/波士顿)",
+        "city": "波士顿 (福克斯堡)",
+        "stage": "小组赛 (3RD组)",
+        "summary": "【已完赛】🇫🇷法国 (4:6) 英格兰🏴󠁧󠁢󠁥󠁮󠁧󠁿"
     }
 }
