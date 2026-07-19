@@ -1234,5 +1234,17 @@
         "city": "波士顿 (福克斯堡)",
         "stage": "小组赛 (3RD组)",
         "summary": "【已完赛】🇫🇷法国 (4:6) 英格兰🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+    },
+    "104": {
+        "finished": true,
+        "home_team": "西班牙",
+        "home_score": "1",
+        "away_score": "0",
+        "away_team": "阿根廷",
+        "local_date": "07/19/2026 15:00",
+        "stadium": "大都会人寿体育场 (MetLife Stadium, 纽泽西/纽约都会区)",
+        "city": "纽约/新泽西",
+        "stage": "小组赛 (FINAL组)",
+        "summary": "【已完赛】🇪🇸西班牙 (1:0) 阿根廷🇦🇷"
     }
 }
